@@ -1,0 +1,494 @@
+body {
+	font-family: Calibri, sans-serif
+}
+
+.contentWrap img {
+	float: left;
+	margin: 5px 20px 15px 0
+}
+
+.contentWrap img.right {
+	float: right;
+	margin: 5px 0 15px 20px
+}
+
+.header .empPortal {
+	padding-left: 25px;
+	background-position: 0 3px
+}
+
+.topNav ul li {
+	margin-left: 25px
+}
+
+.c-share {
+	left: 0
+}
+
+.topSearch .searchBtn {
+	margin-left: 30px
+}
+
+.readmore {
+	background-image: url(../images/arrow-blue.png);
+	padding: 10px 10px 15px 0;
+	background-position: 85% center
+}
+
+.readmore:after {
+	right: 3px
+}
+
+.readmore:hover {
+	background-position: 80% center
+}
+
+.heroSlider .carousel-control-next {
+	right: 5%
+}
+
+.heroSlider .carousel-control-prev {
+	right: 9%;
+	left: auto
+}
+
+.counterBox .number:before {
+	left: 0
+}
+
+.counterBox .icon {
+	margin-right: 25px
+}
+
+.appStore a {
+	margin-right: 20px
+}
+
+.footerEmail {
+	background-position: 0 7px;
+	padding-left: 32px
+}
+
+.footerPhone {
+	background-position: 0 center;
+	color: #fff;
+	padding-left: 32px
+}
+
+.footerColumn address {
+	background-position: 0 5px;
+	padding-left: 32px
+}
+
+.poBox {
+	background-position: 0 center;
+	padding-left: 32px
+}
+
+.footerLinks li a {
+	background-position: 0 7px;
+	padding-left: 15px
+}
+
+.numbertxt p {
+	text-align: right
+}
+
+.bannerSlider .slick-next:before,
+.bannerSlider .slick-prev:before {
+	left: 2px
+}
+
+.footerLinks li a {
+	background-image: url(../images/link-arrow-en.png)
+}
+
+.pageBreadcrumbs .breadcrumb-item+.breadcrumb-item::before {
+	padding-right: .7rem
+}
+
+.header .toggleSearch {
+	right: 35px
+}
+
+.ulList li {
+	background-position: 0 6px;
+	padding-left: 25px;
+	background-image: url(../images/chevron-sign-to-right-en.svg)
+}
+
+.menuSidebar .sidebarNav li a.dropdown-link:after {
+	right: 20px
+}
+
+span.listtxt {
+	padding-left: 15px
+}
+
+.modal-body img {
+	float: left;
+	margin: 0 20px 20px 0
+}
+
+.contact_address li p {
+	padding-left: 10px
+}
+
+.form_panel select.form-control,
+select.form-control {
+	background-position: 97% center
+}
+
+.socialWidget a {
+	margin: 20px 15px 0 0
+}
+
+.FeedbackLink {
+	background-image: url(../images/right-arrow-en.svg);
+	background-position: right 15px;
+	padding: 10px 35px 15px 0
+}
+
+.FeedbackLink:hover {
+	background-position: 95% 15px;
+	background-image: url(../images/right-arrow-hover-en.svg)
+}
+
+.poIcon {
+	left: -6px
+}
+
+.newsTabs .c-share {
+	left: auto;
+	right: -50px
+}
+
+.download_brochures {
+	padding: 10px 35px 10px 15px;
+	background-position: 93% 18px
+}
+
+.key_text {
+	padding-left: 15px
+}
+
+.FeedbackLink.downArrow {
+	background-position: 95% 18px
+}
+
+.FeedbackLink.downArrow:hover {
+	background-position: 95% 22px
+}
+
+.servicesForm .form_column i {
+	right: 25px
+}
+
+.contentWrap iframe {
+	float: right;
+	margin: 20px 0 15px 20px
+}
+
+.customTabs ul.step_list a:after {
+	left: 100%;
+	border-right-width: 0;
+	border-left-width: 27px;
+	border-left-color: inherit
+}
+
+.customTabs ul.step_list li:after {
+	left: 97%;
+	border-right-width: 0;
+	border-left-width: 27px;
+	border-left-color: #fff;
+	-webkit-transform: translateX(4px);
+	-moz-transform: translateX(4px);
+	-ms-transform: translateX(4px);
+	-o-transform: translateX(4px);
+	transform: translateX(4px)
+}
+
+.customTabs ul.step_list li:nth-child(2) a,
+.customTabs ul.step_list li:nth-child(3) a {
+	padding-left: 32px
+}
+
+.customTabs ul.step_list li:last-child a {
+	padding-left: 25px
+}
+
+.customTabs ul.step_list a {
+	padding: 15px 0 15px 10px;
+	margin-right: 15px
+}
+
+.search_videoForm .searchbtn {
+	right: 12px
+}
+
+.form_column .default_btn {
+	margin-left: auto
+}
+
+.form_column .default_btn.grey_bgbtn {
+	margin: 0
+}
+
+.customFile .file_label {
+	right: 5px
+}
+
+span.phoneBox a {
+	background-position: 10px center;
+	padding: 3px 10px 3px 32px
+}
+
+.counterBox .n_data p {
+	text-align: left
+}
+
+.sitemapList li .submenu li {
+	background-position: 0 6px;
+	padding-left: 22px;
+	background-image: url(../images/chevron-sign-to-right-en.svg)
+}
+
+.sitemapList li .submenu ul li {
+	background-image: none;
+	padding-left: 0
+}
+
+.sitemapList li .submenu ul {
+	padding-left: 15px
+}
+
+.contactBtns .primary_btn {
+	margin-left: 1rem
+}
+
+.contactBtns {
+	text-align: right
+}
+
+.feedbackForm .form_panel .form-group i {
+	right: 25px
+}
+
+.ps-6 {
+	padding-left: 13%
+}
+
+.pr-6 {
+	padding-right: 13%
+}
+
+.course_save {
+	right: 25px
+}
+
+.courseDescription {
+	padding-left: 25px
+}
+
+.courselisting li {
+	margin-right: 1.5rem
+}
+
+.alert_course_form label.form-check-label {
+	text-align: left
+}
+
+.course_summary p {
+	text-align: left
+}
+
+.summary_list li {
+	padding-left: 20px
+}
+
+.summary_list li:before {
+	left: 0
+}
+
+.courseAction a {
+	margin-left: 14px
+}
+
+.apply_course_caption p {
+	text-align: left
+}
+
+.addMore i {
+	margin-right: 5px
+}
+
+.custom_datepicker .far {
+	right: 25px
+}
+
+.course_ap_wrapper .form_panel .form-group i.far {
+	right: 25px
+}
+
+.course_summary {
+	padding-right: 5%
+}
+
+#ar-content .socialShare {
+	left: -16px;
+	right: auto
+}
+
+#ar-content .courseAction a {
+	margin: 0 14px 0 0
+}
+
+.styledSelect:after {
+	right: 8px
+}
+
+.styledSelect {
+	padding-right: 10%;
+	padding-left: 15px
+}
+
+.clearSelectfromDiv {
+	float: right;
+	margin-right: 30px
+}
+ 
+.form_panel form .easySelect label.error {
+	left: 0
+}
+
+.value_icon img {
+	margin:0; 
+}
+
+.appContent p {
+	text-align: left
+}
+.topNav .container{text-align:right;}
+.topNav .btn-group{margin-left:18px;}
+.topNav .dropdown-item .fa-phone{margin-right:12px;}
+.topNav ul.dropdown-menu{right:0;}
+
+@media screen and (max-width:1479px) {
+	.h-align {
+		min-height: 44px
+	}
+}
+
+@media screen and (max-width:1366px) {
+	.form_panel select.form-control,
+	select.form-control {
+		background-position: 94% center
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.counterWrapper_abt .counterBox .icon {
+		margin-right: 10px
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.appStore a {
+		margin-right: 10px
+	}
+}
+
+@media screen and (max-width:992px) {
+	.counterBox .icon,
+	.counterWrapper_abt .counterBox .icon {
+		margin-right: 8px
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link:after,
+	.header .navbar-nav li.dropdownMenu a.nav-link:before {
+		right: 25px
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link:before {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg)
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link:after {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg)
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link.menuOpen:after {
+		right: 20px
+	}
+	.header .navbar-nav .subMenu li.subNav>a.expandLink:after {
+		right: 20px
+	}
+	.header .navbar-nav .subMenu li.subNav>a:before {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg)
+	}
+	.header .navbar-nav .subMenu li.subNav>a:after {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg)
+	}
+	.header .navbar-nav .subMenu li.subNav>a:after,
+	.header .navbar-nav .subMenu li.subNav>a:before {
+		right: 25px
+	}
+	.header.fixedHeader #close_icon {
+		right: 60px
+	}
+	#close_icon {
+		right: 25px
+	}
+	.header.fixedHeader.sticky_header #close_icon {
+		right: 25px
+	}
+	.header .toggleSearch {
+		left: 0
+	}
+	.newsTabs .c-share {
+		right: 0;
+		top: -58px
+	}
+}
+
+@media screen and (max-width:767px) {
+	.heroSlider .carousel-control-prev {
+		right: 10%
+	}
+	.heroSlider .carousel-control-next {
+		right: 4%
+	}
+	.counterBox .n_data p {
+		text-align: center
+	}
+	.contactBtns {
+		text-align: left
+	}
+	.contactWrapper .form_panel {
+		padding-left: 0
+	}
+	.header .empPortal {
+		padding-left: 18px;
+		background-position: 0 1px
+	}
+}
+
+@media screen and (max-width:576px) {
+	.heroSlider .carousel-control-prev {
+		right: 50px
+	}
+	.contactBtns .primary_btn {
+		margin-left: 0
+	}
+	.courseDescription {
+		padding-left: 0
+	}
+}

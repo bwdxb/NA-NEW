@@ -1,0 +1,684 @@
+@import url(https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap);
+body {
+	font-family: Almarai, sans-serif;
+	overflow-x: hidden;
+	font-weight: 300;
+	font-size: 15px
+}
+
+.termsArabic {
+	padding-right: 2rem;
+	list-style: arabic-indic
+}
+
+p {
+	color: #3f3e3e
+}
+
+b,
+strong {
+	font-weight: 700
+}
+
+.feedbackIcon h6 {
+	font-size: .8rem!important
+}
+
+.page_heading,
+.section_title h2 {
+	font-size: 32px
+}
+
+.contentWrap img {
+	float: right;
+	margin: 5px 0 15px 20px
+}
+
+.contentWrap img.right {
+	float: left;
+	margin: 5px 20px 15px 0
+}
+
+#main-content,
+.footer,
+.header {
+	direction: rtl
+}
+
+.header .empPortal {
+	padding-right: 25px;
+	background-position: right 3px
+}
+
+.topNav ul li {
+	margin-right: 25px
+}
+
+.c-share {
+	right: 0
+}
+
+.topSearch .searchBtn {
+	margin-right: 30px
+}
+
+.readmore {
+	background-image: url(../images/arrow-blue-ar.png);
+	padding: 10px 0 15px 10px;
+	background-position: 18px center
+}
+
+.readmore:after {
+	left: 3px
+}
+
+.readmore:hover {
+	background-position: 26px center
+}
+
+.heroSlider .carousel-control-next {
+	left: 9%;
+	right: auto
+}
+
+.heroSlider .carousel-control-prev {
+	left: 5%;
+	right: auto
+}
+
+.counterBox .number:before {
+	right: 0
+}
+
+.counterBox .icon {
+	margin-left: 25px
+}
+
+.appStore a {
+	margin-left: 20px
+}
+
+.footerEmail {
+	background-position: right 7px;
+	padding-right: 32px
+}
+
+.footerPhone {
+	background-position: right center;
+	color: #fff;
+	padding-right: 32px;
+	direction: ltr;
+	text-align: right
+}
+
+.footerColumn address {
+	background-position: right 5px;
+	padding-right: 32px
+}
+
+.poBox {
+	background-position: right center;
+	padding-right: 32px
+}
+
+.footerLinks li a {
+	background-position: right 7px;
+	padding-right: 15px
+}
+
+.numbertxt p {
+	text-align: left
+}
+
+.bannerSlider .slick-next:before,
+.bannerSlider .slick-prev:before {
+	left: -2px
+}
+
+.footerLinks li a {
+	background-image: url(../images/link-arrow-ar.png)
+}
+
+.pageBreadcrumbs .breadcrumb-item+.breadcrumb-item {
+	padding: 0
+}
+
+.pageBreadcrumbs .breadcrumb-item+.breadcrumb-item::before {
+	padding-left: .5rem;
+	float: none
+}
+
+.header .toggleSearch {
+	left: 35px
+}
+
+.ulList li {
+	background-position: right 6px;
+	padding-right: 25px;
+	background-image: url(../images/chevron-sign-to-right-ar.svg)
+}
+
+.menuSidebar .sidebarNav li a.dropdown-link:after {
+	left: 20px
+}
+
+span.listtxt {
+	padding-right: 15px
+}
+
+.modal-body img {
+	float: right;
+	margin: 0 0 20px 20px
+}
+
+.contact_address li p {
+	padding-right: 10px
+}
+
+.form_panel select.form-control,
+select.form-control {
+	background-position: 12px center
+}
+
+.socialWidget a {
+	margin: 20px 0 0 15px
+}
+
+.FeedbackLink {
+	background-image: url(../images/right-arrow-ar.svg);
+	background-position: 0 center;
+	padding: 10px 0 10px 35px
+}
+
+.FeedbackLink:hover {
+	background-position: 4px center;
+	background-image: url(../images/right-arrow-hover-ar.svg)
+}
+
+.poIcon {
+	right: -4px
+}
+
+.newsTabs .c-share {
+	right: auto;
+	left: -50px
+}
+
+.newsAds .newsDate span {
+	font-family: 'GE SS Two'
+}
+
+.download_brochures {
+	padding: 10px 15px 10px 35px;
+	background-position: 10px 18px
+}
+
+.accordion-button::after {
+	margin-left: 0;
+	margin-right: auto
+}
+
+.form-check .form-check-input {
+	float: right;
+	margin-left: .5rem
+}
+
+.contact_address li:nth-child(3) p {
+	direction: ltr;
+	text-align: right
+}
+
+.key_text {
+	padding-right: 15px
+}
+
+.serviceFeed .ms-auto {
+	margin-right: auto!important;
+	margin-left: 0!important
+}
+
+.serviceFeed .me-auto {
+	margin-left: auto!important;
+	margin-right: 0!important
+}
+
+.FeedbackLink.downArrow {
+	background-position: 10px 18px
+}
+
+.FeedbackLink.downArrow:hover {
+	background-position: 10px 20px
+}
+
+.servicesForm .form_column i {
+	left: 25px
+}
+
+.form_panel .radio {
+	padding: 0 25px 0 0
+}
+
+.form_panel .checkround {
+	left: auto;
+	right: 0;
+	top: 5px
+}
+
+.contentWrap iframe {
+	float: left;
+	margin: 20px 20px 15px 0
+}
+
+.customTabs ul.step_list a:after {
+	right: 100%;
+	border-left-width: 0;
+	border-right-width: 27px;
+	border-right-color: inherit
+}
+
+.customTabs ul.step_list li:after {
+	right: 97%;
+	border-left-width: 0;
+	border-right-width: 27px;
+	border-right-color: #fff;
+	-webkit-transform: translateX(-4px);
+	-moz-transform: translateX(-4px);
+	-ms-transform: translateX(-4px);
+	-o-transform: translateX(-4px);
+	transform: translateX(-4px)
+}
+
+.customTabs ul.step_list li:nth-child(2) a,
+.customTabs ul.step_list li:nth-child(3) a {
+	padding-right: 32px
+}
+
+.customTabs ul.step_list li:last-child a {
+	padding-right: 25px
+}
+
+.customTabs ul.step_list a {
+	padding: 15px 10px 15px 0;
+	margin-left: 15px
+}
+
+.search_videoForm .searchbtn {
+	left: 12px
+}
+
+.form_column .default_btn {
+	margin-right: auto
+}
+
+.form_column .default_btn.grey_bgbtn {
+	margin-right: 0
+}
+
+.customFile .file_label {
+	left: -5px
+}
+
+span.phoneBox a {
+	background-position: 90% center;
+	padding: 3px 32px 3px 10px;
+	direction: ltr;
+	text-align: center
+}
+
+.eng {
+	display: none
+}
+
+.counterBox .n_data p {
+	text-align: right
+}
+
+.sitemapList li .submenu li {
+	background-position: right 6px;
+	padding-right: 22px;
+	background-image: url(../images/chevron-sign-to-right-ar.svg)
+}
+
+.sitemapList li .submenu ul li {
+	background-image: none;
+	padding-right: 0
+}
+
+.sitemapList li .submenu ul {
+	padding-right: 15px
+}
+
+.contactBtns .primary_btn {
+	margin-right: 1rem
+}
+
+.contactBtns {
+	text-align: left
+}
+
+.footerColumn:nth-child(4) font {
+	display: block
+}
+
+.feedbackForm .form_panel .form-group i {
+	left: 25px
+}
+
+.back-icon {
+	padding-bottom: 5px
+}
+
+.ps-6 {
+	padding-right: 13%
+}
+
+.pr-6 {
+	padding-left: 13%
+}
+
+.course_save {
+	left: 25px
+}
+
+.courseDescription {
+	padding-right: 25px
+}
+
+.courselisting li {
+	margin-left: 1.5rem
+}
+
+.courselisting {
+	margin-top: .5rem
+}
+
+.asideWidget .text-start {
+	text-align: right!important
+}
+
+.alert_course_form label.form-check-label {
+	text-align: right
+}
+
+.logoColumn {
+	text-align: left
+}
+
+.course_summary p {
+	text-align: right
+}
+
+.summary_list li {
+	padding-right: 20px
+}
+
+.summary_list li:before {
+	right: 0
+}
+
+.courseAction a {
+	margin-right: 14px
+}
+
+.apply_course_caption p {
+	text-align: right
+}
+
+.course_ap_wrapper .form_panel .form-group i.far {
+	left: 25px
+}
+
+.course_summary {
+	padding-left: 5%
+}
+
+.socialShare {
+	left: -16px
+}
+
+.header.fixedHeader.sticky_header .toggleSearch,
+.header.sticky_header .toggleSearch {
+	right: auto
+}
+
+.educationForm .text-end {
+	text-align: left!important
+}
+
+.styledSelect:after {
+	left: 8px
+}
+
+.styledSelect {
+	padding-left: 10%;
+	padding-right: 15px
+}
+
+.clearSelectfromDiv {
+	float: left;
+	margin-left: 30px
+}
+
+.scBox p {
+	min-height: 110px
+}
+
+.scBox {
+	padding: 40px 20px
+}
+
+.form_panel form .easySelect label.error {
+	right: 0
+}
+
+#Event_endDate,
+#Event_startDate,
+#PickUp_date,
+#ReturnDate,
+#appointment_time,
+#incident_date,
+#patient_dob,
+#timepicker1,
+#timepicker2,
+#timepicker3 {
+	text-align: right
+}
+
+#appointment_time,
+#timepicker1,
+#timepicker2,
+#timepicker3 {
+	direction: ltr
+}
+
+.value_icon img {
+	margin: 0 0 0 20px
+} 
+
+.appContent p {
+	text-align: right
+}
+.topNav .container{text-align:left;}
+.topNav .btn-group{margin-right:18px;}
+.topNav .dropdown-item{direction:ltr;}
+.topNav .dropdown-item .fa-phone{margin-right:7px;}
+.topNav ul.dropdown-menu{left:0;}
+
+@media screen and (max-width:1499px) {
+	.h-align {
+		min-height: 44px
+	}
+}
+
+@media screen and (max-width:1400px) {
+	.scBox p {
+		min-height: 110px
+	}
+}
+
+@media screen and (max-width:1349px) {
+	.footerColumn:nth-child(3) {
+		margin-right: 1%
+	}
+}
+
+@media screen and (max-width:1279px) {
+	.scBox p {
+		min-height: 132px
+	}
+	.scBox {
+		padding: 40px 10px
+	}
+}
+
+@media screen and (max-width:1199px) {
+	.counterWrapper_abt .counterBox .icon {
+		margin-left: 10px
+	}
+	.footerColumn:nth-child(4) {
+		max-width: 35%
+	}
+	.scBox p {
+		min-height: 155px
+	}
+}
+
+@media screen and (max-width:1099px) {
+	.numberColumn {
+		width: 33%;
+		align-items: flex-start
+	}
+	.counterBox .n_data {
+		width: calc(100% - 100px)
+	}
+	.counterBox .icon,
+	.counterWrapper_abt .counterBox .icon {
+		margin-left: 15px
+	}
+	.appStore a {
+		margin-left: 10px
+	}
+	.footerColumn:nth-child(4) {
+		max-width: 30%
+	}
+}
+
+@media screen and (max-width:992px) {
+	.header .navbar-nav li.dropdownMenu a.nav-link:after,
+	.header .navbar-nav li.dropdownMenu a.nav-link:before {
+		left: 25px
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link:before {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg)
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link:after {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg)
+	}
+	.header .navbar-nav li.dropdownMenu a.nav-link.menuOpen:after {
+		left: 20px
+	}
+	.header .navbar-nav .subMenu li.subNav>a.expandLink:after {
+		left: 20px
+	}
+	.header .navbar-nav .subMenu li.subNav>a:before {
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg)
+	}
+	.header .navbar-nav .subMenu li.subNav>a:after {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg)
+	}
+	.header .navbar-nav .subMenu li.subNav>a:after,
+	.header .navbar-nav .subMenu li.subNav>a:before {
+		left: 25px
+	}
+	.header.fixedHeader #close_icon {
+		left: 60px
+	}
+	#close_icon {
+		left: 25px
+	}
+	.header.fixedHeader.sticky_header #close_icon {
+		left: 25px
+	}
+	.newsTabs .c-share {
+		left: 0;
+		top: -58px
+	}
+	.socialWidget a {
+		margin: 20px 0 0 12px
+	}
+	.header .toggleSearch {
+		left: 0
+	}
+	.footerColumn:nth-child(4) {
+		max-width: inherit
+	}
+	.scBox p {
+		min-height: 100px
+	}
+}
+
+@media screen and (max-width:767px) {
+	.heroSlider .carousel-control-prev {
+		left: 4%
+	}
+	.heroSlider .carousel-control-next {
+		left: 10%
+	}
+	.numberColumn {
+		width: 100%;
+		align-items: center
+	}
+	.counterBox .n_data {
+		width: 100%
+	}
+	.counterBox .n_data p {
+		text-align: center
+	}
+	.header .empPortal {
+		padding-right: 18px
+	}
+}
+
+@media screen and (max-width:576px) {
+	.page_heading,
+	.section_title h2 {
+		font-size: 22px
+	}
+	.heroSlider .carousel-control-next {
+		left: 50px
+	}
+	.contactBtns .primary_btn {
+		margin-right: 0
+	}
+	p {
+		word-break: break-word
+	}
+	.callAction {
+		left: 34%
+	}
+	.callAction .learnMore {
+		padding: 5px
+	}
+	.scBox p {
+		min-height: 50px
+	}
+	.courseDescription {
+		padding-right: 0
+	}
+}
+
+ol.abjd {
+	margin-right: 1.5em
+}
