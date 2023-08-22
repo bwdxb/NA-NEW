@@ -1,0 +1,7 @@
+   username,Product ID,Product Name,Product Category Name,Product Sub-Category Name,Brand Name,product_id_link_to,cost,size,maximum_order,rating,product_title,tax_type,tax,discount,shipping_type,blog_description,shipping_charge,shipping_time,color,main_image,sub Images,product_spectification key,product_spectification_value
+LOVELY,10100210,Redmi mobile,Mobile,Redmi,MI,,8999,1,2,4,Redmi 3S Prime,vat,10,200,free,kbewkfbkwebfkwbkfbwkfbw,,3days,red,m2.jpg,"m2.jpg,m3.jpg","color,Ram,OS","red,3GB,marshmallo"
+LOVELY,10100211,Redmi mobile,Mobile,Redmi,MI,,9000,2,3,5,Redmi 4S Prime,vat,18,201,free,kbewkfbkwebfkwbkfbwkfbw,,4days,red,m3.jpg,"m2.jpg,m4.jpg","color,Ram,OS","red,4GB,marshmallo"
+LOVELY,10100212,Redmi mobile,Mobile,Redmi,MI,,9001,3,4,2,Redmi 5S Prime,vat,10,202,charge,kbewkfbkwebfkwbkfbwkfbw,200,5days,pink,m4.jpg,"m2.jpg,m2.jpg","color,Ram,OS","red,5GB,marshmallo"
+LOVELY,10100213,Redmi mobile,Mobile,Redmi,MI,,9002,4,5,4,Redmi 6S Prime,vat,13,203,free,kbewkfbkwebfkwbkfbwkfbw,,6days,red,m2.jpg,"m2.jpg,m4.jpg","color,Ram,OS","red,6GB,marshmallo"
+LOVELY,10100214,Redmi mobile,Mobile,Redmi,MI,,9003,5,2,5,Redmi 7S Prime,vat,1,204,charge,kbewkfbkwebfkwbkfbwkfbw,300,7days,black,m4.jpg,"m2.jpg,m3.jpg","color,Ram,OS","red,7GB,marshmallo"
+LOVELY,10100215,Redmi mobile,Mobile,Redmi,MI,,9004,6,4,3,Redmi 8S Prime,vat,18,205,free,kbewkfbkwebfkwbkfbwkfbw,,8days,red,m3.jpg,"m2.jpg,m4.jpg","color,Ram,OS","red,8GB,marshmallo"

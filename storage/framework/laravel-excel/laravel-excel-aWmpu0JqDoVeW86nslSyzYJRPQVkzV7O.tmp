@@ -1,0 +1,2 @@
+    "S.NO",Product ID,Product Name,Product Category Name,Product Sub-Category Name,Brand Name,product_id_link_to,cost,size,maximum_order,rating,product_title,tax_type,tax,discount,shipping_type,blog_description,shipping_charge,shipping_time,color,main_image,sub Images,product_spectification key,product_spectification_value
+1,101001,Redmi mobile,Mobile,Redmi,MI,,8999,1,2,4,Redmi 3S Prime,vat,10,200,free,kbewkfbkwebfkwbkfbwkfbw,0,3days,red,m2.jpg,"m2.jpg,m3.jpg","color,Ram,OS","red,3GB,marshmallo"

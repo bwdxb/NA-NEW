@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Portal Dashboard</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSRF Token -->
+  <meta name="_token" content="cIP4UxLz4G2gUCE2CgBzcyDV4lkUDTRRINCVh9av">
+  
+  <link rel="shortcut icon" href="http://na.bw.ae/national-ambulance/favicon.ico">
+
+  <!-- plugin css -->
+   <link rel="stylesheet" href="http://na.bw.ae/national-ambulance/public/employee_portal/assets/plugins/@mdi/font/css/materialdesignicons.min.css">
+   <link rel="stylesheet" href="http://na.bw.ae/national-ambulance/public/employee_portal/assets/plugins/perfect-scrollbar/perfect-scrollbar.css">
+  
+  <!-- end plugin css -->
+  
+  <!-- common css -->
+  <link rel="stylesheet" href="app.css"> 
+  <!-- end common css -->
+
+  </head>
+<body data-base-url="http://na.bw.ae/national-ambulance">
+    <div class="container-scroller" id="app">
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                 <a class="navbar-brand brand-logo" href="http://na.bw.ae/national-ambulance">
+                    <img src="http://na.bw.ae/national-ambulance/public/website/images/logo.png" alt="logo" />
+                 </a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+              <ul class="navbar-nav navbar-nav-right">
+                <li class="nav-item dropdown">
+                  <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <i class="mdi mdi-file-outline"></i>
+                    <span class="count">7</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                    <a class="dropdown-item py-3">
+                      <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+                      <span class="badge badge-pill badge-primary float-right">View all</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic"> </div>
+                      <div class="preview-item-content flex-grow py-2">
+                        <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                        <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                      <div class="preview-item-content flex-grow py-2">
+                        <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                        <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item preview-item">
+                      <div class="preview-thumbnail">
+                        <img src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/images/faces/face3.jpg" alt="image" class="img-sm profile-pic"> </div>
+                      <div class="preview-item-content flex-grow py-2">
+                        <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                        <p class="font-weight-light small-text"> The meeting is cancelled </p>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-bell-outline"></i>
+                    <span class="count bg-success">4</span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                    <a class="dropdown-item py-3 border-bottom">
+                      <p class="mb-0 font-weight-medium float-left">4 new notifications </p>
+                      <span class="badge badge-pill badge-primary float-right">View all</span>
+                    </a>
+                    <a class="dropdown-item preview-item py-3">
+                      <div class="preview-thumbnail">
+                        <i class="mdi mdi-alert m-auto text-primary"></i>
+                      </div>
+                      <div class="preview-item-content">
+                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                        <p class="font-weight-light small-text mb-0"> Just now </p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item preview-item py-3">
+                      <div class="preview-thumbnail">
+                        <i class="mdi mdi-settings m-auto text-primary"></i>
+                      </div>
+                      <div class="preview-item-content">
+                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                        <p class="font-weight-light small-text mb-0"> Private message </p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item preview-item py-3">
+                      <div class="preview-thumbnail">
+                        <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                      </div>
+                      <div class="preview-item-content">
+                        <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                        <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+                       </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link count-indicator dropdown-toggle" id="settingDropdown" href="#" data-toggle="dropdown">
+                    <i class="mdi mdi-settings"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="settingDropdown">
+                    <a class="dropdown-item preview-item py-3">
+                      <div class="preview-thumbnail">
+                        <i class="mdi mdi-alert-circle-outline text-primary"></i>
+                      </div>
+                      <div class="preview-item-content">
+                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                      </div>
+                    </a>
+                    <a class="dropdown-item preview-item py-3">
+                      <div class="preview-thumbnail">
+                        <i class="mdi mdi-progress-download text-primary"></i>
+                      </div>
+                      <div class="preview-item-content">
+                        <h6 class="preview-subject font-weight-normal text-dark mb-1">Update</h6>
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown d-none d-xl-inline-block">
+                  <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                    <span class="profile-text d-none d-md-inline-flex">Richard V.Welsh !</span>
+                    <img class="img-xs rounded-circle" src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/images/faces/face8.jpg" alt="Profile image"> </a>
+                  <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                    <a class="dropdown-item p-0">
+                      <div class="d-flex border-bottom w-100 justify-content-center">
+                        <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                          <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                        </div>
+                        <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                          <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                        </div>
+                        <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                          <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                        </div>
+                      </div>
+                    </a>
+                    <a class="dropdown-item mt-2"> Manage Accounts </a>
+                    <a class="dropdown-item"> Change Password </a>
+                    <a class="dropdown-item"> Check Inbox </a>
+                    <a class="dropdown-item"> Sign Out </a>
+                  </div>
+                </li>
+              </ul>
+              <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                <span class="mdi mdi-menu icon-menu"></span>
+              </button>
+            </div>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <div class="main-panel">
+              <div class="content-wrapper">
+                  <div class="row mt-4">
+                      <div class="col-md-12 d-flex align-items-center justify-content-between">
+                           <h1 class="h1_heading">Stories</h1>
+                           <div class="addProduct">
+                                <a href="#"><i class="mdi mdi-plus-circle"></i>Add Your Story</a>
+                           </div>
+                      </div>
+                  </div>
+                  <div class="row mb-4">
+                       <div class="col-md-12">
+                            <div class="documentFilter">
+                                <div class="selectFilter">
+                                  <label class="filterTxt mr-2">Filter by:</label> 
+                                  <div class="filterBox">
+                                    <select name="Category" class="form-control">
+                                      <option value="">Category</option>
+                                      <option value="eBooks">eBooks</option>
+                                      <option value="Sale">Sale</option>
+                                      <option value="Policies">Policies</option>
+                                      <option value="Reports">Reports</option>
+                                      <option value="Processes">Processes</option>
+                                    </select>
+                                  </div>                                  
+                                  <div class="filterBox">
+                                    <input type="text" placeholder="Date" class="form-control">
+                                  </div> 
+                                  <div class="DT_Reset">
+                                    <a href="#" class="reset"><i class="mdi mdi-undo-variant"></i> Reset</a>
+                                  </div>
+                                </div>
+                                <div class="recentFilter">
+                                     <div class="filterBox">
+                                          <select name="Newest/Oldest" class="form-control">
+                                            <option value="">Newer/Older</option>
+                                            <option value="eBooks">Newest to Oldest</option>
+                                            <option value="Sale">Oldest to Newest</option>
+                                          </select>
+                                     </div>
+                                </div>                             
+                            </div>
+                       </div>
+                  </div>
+                  <div class="row grid-margin mt-4 storyWrapper">
+                       <div class="col-xl-4 col-lg-4">
+                            <div class="storyItem mb-4">
+                                      <a class="hoverEffect" href="#" target="_blank">                                            
+                                         <div class="storyImage">
+                                              <img class="imgHover" src="http://na.bw.ae/national-ambulance/public/uploads/news/7399.jpg">
+                                         </div>
+                                         <div class="storyDescription">
+                                              <div class="storyCredit"><span>Design Trends</span></div>
+                                              <h4 class="storyTitle">Events' Ambulance Coverage</h4>
+                                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look...<small>read more</small></p>
+                                              <div class="storyAuthor">
+                                                    <span class="authorName"><font>By</font> Nour Saifi .</span>
+                                                    <span class="poostDate">Nov 7, 2019</span>
+                                              </div>
+                                         </div>
+                                      </a>
+                            </div> 
+                       </div>
+                       <div class="col-xl-4 col-lg-4">
+                            <div class="storyItem mb-4">
+                                      <a class="hoverEffect" href="#" target="_blank">                                            
+                                         <div class="storyImage">
+                                              <img class="imgHover" src="http://na.bw.ae/national-ambulance/public/uploads/news/7399.jpg">
+                                         </div>
+                                         <div class="storyDescription">
+                                              <div class="storyCredit"><span>Inspirations</span></div>
+                                              <h4 class="storyTitle">Events' Ambulance Coverage</h4>
+                                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look...<small>read more</small></p>
+                                              <div class="storyAuthor">
+                                                    <span class="authorName"><font>By</font> Nour Saifi .</span>
+                                                    <span class="poostDate">Nov 7, 2019</span>
+                                              </div>
+                                         </div>
+                                      </a>
+                            </div> 
+                       </div>
+                       <div class="col-xl-4 col-lg-4">
+                            <div class="storyItem mb-4">
+                                      <a class="hoverEffect" href="#" target="_blank">                                            
+                                         <div class="storyImage">
+                                              <img class="imgHover" src="http://na.bw.ae/national-ambulance/public/uploads/news/7399.jpg">
+                                         </div>
+                                         <div class="storyDescription">
+                                              <div class="storyCredit"><span>Community</span></div>
+                                              <h4 class="storyTitle">Events' Ambulance Coverage</h4>
+                                              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look...<small>read more</small></p>
+                                              <div class="storyAuthor">
+                                                    <span class="authorName"><font>By</font> Nour Saifi .</span>
+                                                    <span class="poostDate">Nov 7, 2019</span>
+                                              </div>
+                                         </div>
+                                      </a>
+                            </div> 
+                       </div>
+                  </div>
+                  <div class="row mt-5">
+                       <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                     <form class="addProductForm">
+                                          <div class="form_column">
+                                             <h5>Add Your Story</h5>
+                                             <div class="row">
+                                                  <div class="form-group col-md-6">
+                                                     <label>Title</label>
+                                                     <input type="text" class="form-control">
+                                                  </div>
+                                                  <div class="form-group col-md-6">
+                                                      <label>Category</label>
+                                                      <select class="form-control">
+                                                          <option selected></option>
+                                                          <option>UAE</option>
+                                                          <option>USA</option>
+                                                          <option>India</option>
+                                                          <option>Canada</option>
+                                                      </select>
+                                                  </div>                               
+                                             </div>
+                                             <div class="row">
+                                                  <div class="form-group col-md-6">
+                                                     <label>Photo Credits</label>
+                                                     <input type="text" class="form-control">
+                                                  </div>
+                                                  <div class="form-group col-md-6">
+                                                     <label>Video Credits</label>
+                                                     <input type="text" class="form-control">
+                                                  </div> 
+                                             </div>
+                                              <div class="row">
+                                                  <div class="form-group col-md-12">
+                                                      <label>Tell Us Your Story</label>
+                                                      <textarea class="form-control" row="3"></textarea>
+                                                  </div>                                
+                                              </div>
+                                               <div class="row">
+                                                   <div class="form-group col-md-12">
+                                                        <div class="custom-file">
+                                                            <label for="exampleFormControlFile1">Upload Photo/Video</label>
+                                                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                        </div>
+
+                                                   </div>             
+                                               </div>
+                                               <div class="row">
+                                                   <div class="form-group col-md-12">
+                                                        <div class="form-check form-check-flat">
+                                                          <label class="form-check-label">
+                                                            <input type="checkbox" class="form-check-input"> Please don’t publish my name <i class="input-helper"></i></label>
+                                                        </div>
+                                                        <div class="form-check form-check-flat">
+                                                          <label class="form-check-label">
+                                                            <input type="checkbox" class="form-check-input"> I accept the Media Terms and Conditions <i class="input-helper"></i></label>
+                                                        </div>
+                                                   </div>              
+                                               </div>
+                                          </div>                                          
+                                          <div class="form_column">
+                                              <div class="row">
+                                                  <div class="btn_column form-group col-md-12 mt-3">
+                                                       <button type="submit" class="default_btn">Submit</button>
+                                                  </div>
+                                              </div>
+                                          </div>              
+                                     </form>
+                                </div>
+                            </div>
+                       </div>
+                  </div>
+              </div>
+              <footer class="footer">
+                    <div class="container-fluid clearfix">
+                      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©  <a href="http://www.bootstrapdash.com/" target="_blank">bootstrapdash.com</a> 2020</span>
+                      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/laravel-templates/" target="_blank">Laravel template</a> by BootstrapDash.com <i class="mdi mdi-heart text-danger"></i>
+                      </span>
+                    </div>
+              </footer>
+            </div>
+        </div>
+    </div>
+
+  <!-- base js -->
+  <script src="http://na.bw.ae/national-ambulance/public/employee_portal/js/app.js"></script>
+  <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <!-- end base js -->
+
+  <!-- plugin js -->
+    <!-- end plugin js -->
+
+  <!-- common js -->
+   <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/js/off-canvas.js"></script>
+   <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/js/hoverable-collapse.js"></script>
+   <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/js/misc.js"></script>
+   <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/js/settings.js"></script>
+   <script src="http://na.bw.ae/national-ambulance/public/employee_portal/assets/js/todolist.js"></script>
+  
+  <!-- end common js -->
+
+  </body>
+</html>

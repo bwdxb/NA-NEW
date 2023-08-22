@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+    <title>News</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="topNav">     
+             <div class="container">
+                 <ul>
+                    <li><a class="empPortal" href="#">Employee Portal</a></li>
+                    <li><a class="lang" href="#">العربية</a></li>
+                 </ul>                  
+             </div>
+        </div> 
+        <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container justify-content-space-between">
+                <a class="logo" href="#">
+                   <img class="whiteLogo" src="images/logo.png" alt="National Ambulance">
+                   <img class="fixedNav_logo" src="images/logo_navyblue.png" alt="National Ambulance">
+                </a>
+                <div class="mobShow">
+                     <div class="topSearch">
+                         <button class="mob_searchBtn">
+                               <svg id="seacrh_icon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="cls-1" d="M375.73,330.48A206.52,206.52,0,0,0,416,208C416,93.31,322.69,0,208,0S0,93.31,0,208,93.31,416,208,416a206.57,206.57,0,0,0,122.49-40.27L466.75,512,512,466.75ZM208,352c-79.41,0-144-64.59-144-144S128.59,64,208,64s144,64.6,144,144S287.4,352,208,352Z"/></svg>
+                               <svg id="close_icon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 357"><g id="close"><polygon class="cls-1" points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5 357 35.7"/></g></svg>
+                         </button>
+                     </div>
+                     <form id="mobSearch" class="toggleSearch" style="display:none;" action="">
+                           <input type="text" class="form-control " placeholder="Search here...">
+                     </form>
+                     <button class="navbar-toggler">
+                         <span class="burger_line"></span>
+                     </button>
+                </div>                
+                <div class="navbar-collapse" id="navbar_menu">
+                    <ul class="navbar-nav" id="menu">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">About US</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Who We Are</a></li>
+                              <li><a href="#">Mission & Vision</a></li>
+                              <li><a href="#">CEO Message</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Public Emergency Service </a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">National Emergency Response</a></li>
+                                    <li><a href="#">Northern Emirates</a></li> 
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Our Commitment</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Quality, Health, Safety & Environment</a></li>
+                                    <li><a href="#">Patient Rights</a></li>
+                                    <li><a href="#">Corporate Social Responsibility </a></li> 
+                                </ul>
+                              </li>
+                              <li><a href="#">Board of Directors</a></li>
+                              <li><a href="#">FAQ’s</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">How We Work</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Clinical Governance</a></li>
+                              <li><a href="#">QHSE Management System</a></li>
+                              <li><a href="#">International Accreditations</a></li>
+                              <li><a href="#">Modern Medical Equipment</a></li>
+                              <li><a href="#">Procurement</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">
+                            Services
+                          </a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Emergency Care Solutions</a></li>
+                              <li><a href="#">Emergency Medical Services (EMS)</a></li>
+                              <li><a href="#">On-Site Medical Support</a></li>
+                              <li><a href="#">Event Coverage</a></li>
+                              <li><a href="#">Helicopter Emergency Medical Services (HEMS)</a></li>
+                              <li><a href="#">Patient Transport</a></li>
+                              <li><a href="#">Clinical Manpower Services</a></li>
+                              <li><a href="#">EMS Consulting Services</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Education And Training</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Healthcare Professionals</a></li>
+                                    <li><a href="#">Emergency Medical Services</a></li> 
+                                    <li><a href="#">Specialty Courses</a></li> 
+                                </ul>
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Careers</a>
+                          <ul id="submenu" class="subMenu">
+                              <li class="subNav">
+                                <a class="subLink" href="#">Working With Us</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Why National Ambulance?</a></li>
+                                    <li><a href="#">Meet Our Staff (Staff Testimonials)</a></li>
+                                    <li><a href="#">Message from our CEO/ Message from HR Manager</a></li>  
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Opportunities</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Clinical Careers</a></li>
+                                    <li><a href="#">Non Clinical Careers</a></li>
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Emiratisation</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Opportunities For UAE Nationals</a></li>
+                                    <li><a href="#">Clinical Careers</a></li>
+                                    <li><a href="#">Non Clinical Careers</a></li>
+                                </ul>
+                              </li>
+                          </ul>                      
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Media</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">Social Media</a></li>
+                              <li><a href="#"> Blog + Patient Testimonials</a></li>
+                              <li><a href="#">Upcoming Events</a></li>
+                              <li><a href="#">Campaigns</a></li>
+                              <li><a href="#">Publications</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Contact Us</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Emergency</a></li>
+                              <li><a href="#">Non Emergency</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Feedback</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Compliments, Complaints Or Suggestions</a></li>
+                                    <li><a href="#">Surveys</a></li>
+                                    <li><a href="#">Patient Testimonials</a></li>
+                                </ul>
+                              </li>
+                          </ul>              
+                        </li>
+                    </ul>
+                    <div class="topSearch mobHide">
+                         <button class="searchBtn"></button>
+                    </div>
+                    <form id="deskSearch" class="toggleSearch mobHide" style="display:none;" action="">
+                         <input type="text" class="form-control " placeholder="Search here...">
+                    </form>
+                    <a class="mob_lang" href="#">العربية</a>
+                </div>
+              </div>
+        </nav>        
+    </header>
+    <!--header end-->
+    <section class="pageBanner">
+            <div class="pageHeading">          
+                <div class="container">
+                     <div class="row">
+                          <div class="col-md-12">
+                              <h1>News</h1>
+                              <span class="subTitle">National Ambulance</span>
+                          </div>
+                     </div>
+                </div>
+            </div>
+    </section>
+    <section class="pageBreadcrumbs">
+         <div class="container">
+              <div class="row">
+                   <nav aria-label="breadcrumb" class="col-md-12">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Library</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                  </nav>
+              </div>
+         </div>
+    </section>
+    <section class="pageWrapper newsWrapper section_padding">
+             <div class="container">
+                  <div class="row">
+                       <div class="col-md-12">
+                           <h2 class="wrapTitle">Latest News</h2>
+                       </div>
+                       <div class="col-md-4 col-xl-3">
+                           <aside class="menuSidebar mt-4">
+                                 <h4>About US</h4>
+                                 <ul class="sidebarNav">
+                                     <li><a href="#">Who We Are</a></li>
+                                     <li><a href="#">Mission & Vision</a></li>
+                                     <li><a href="#">CEO Message</a></li>
+                                     <li><a href="#">Public Emergency Service</a></li>
+                                     <li><a href="#">National Emergency Response</a></li>
+                                     <li><a href="#">Northern Emirates</a></li>
+                                     <li><a href="#">Our Commitment</a></li>
+                                     <li><a href="#">Quality, Health, Safety & Environment</a></li>
+                                     <li><a href="#">Patient Rights</a></li>
+                                     <li><a href="#">Corporate Social Responsibility</a></li>
+                                     <li class="active"><a href="#">Board of Directors</a></li>
+                                 </ul>
+                           </aside>
+                      </div>
+                      <div class="col-md-8 col-xl-9">
+                           <div class="contentWrap mt-4">
+                                <div class="row">
+                                     <div class="col-md-4">
+                                          <a href="#" class="news_item hoverEffect">
+                                             <div class="newsImage">
+                                                  <img class="imgHover" src="images/NA-Continued-Medical-Education-CME.jpg" alt="">
+                                                  <span class="news_tag">National Ambulance</span>
+                                             </div>
+                                             <div class="newsDescription">
+                                                  <h3 class="newsTitle">Continued Medical Education (CME)</h3>
+                                                  <h6 class="newsDate">April 3, 2021</h6>
+                                             </div>
+                                          </a>
+                                     </div>
+                                     <div class="col-md-4">
+                                          <a href="#" class="news_item hoverEffect">
+                                             <div class="newsImage">
+                                                  <img class="imgHover" src="images/NA-Emergency-Health-Consultancy.jpg" alt="">
+                                                  <span class="news_tag">National Ambulance</span>
+                                             </div>
+                                             <div class="newsDescription">
+                                                  <h3 class="newsTitle">Emergency Health Consultancy</h3>
+                                                  <h6 class="newsDate">April 3, 2021</h6>
+                                             </div>
+                                          </a>
+                                     </div>
+                                     <div class="col-md-4">
+                                          <a href="#" class="news_item hoverEffect">
+                                             <div class="newsImage">
+                                                  <img class="imgHover" src="images/NA-Emergency-Pre-Hospital-Care-Solutions.jpg" alt="">
+                                                  <span class="news_tag">National Ambulance</span>
+                                             </div>
+                                             <div class="newsDescription">
+                                                  <h3 class="newsTitle">Emergency Pre-Hospital Care Solutions</h3>
+                                                  <h6 class="newsDate">April 3, 2021</h6>
+                                             </div>
+                                          </a>
+                                     </div>
+                                     <div class="col-md-4">
+                                          <a href="#" class="news_item hoverEffect">
+                                             <div class="newsImage">
+                                                  <img class="imgHover" src="images/NA-First-Aid-training.jpg" alt="">
+                                                  <span class="news_tag">National Ambulance</span>
+                                             </div>
+                                             <div class="newsDescription">
+                                                  <h3 class="newsTitle">First Aid Training</h3>
+                                                  <h6 class="newsDate">April 3, 2021</h6>
+                                             </div>
+                                          </a>
+                                     </div>
+                                     <div class="col-md-4">
+                                          <a href="#" class="news_item hoverEffect">
+                                             <div class="newsImage">
+                                                  <img class="imgHover" src="images/NA-Events.jpg" alt="">
+                                                  <span class="news_tag">National Ambulance</span>
+                                             </div>
+                                             <div class="newsDescription">
+                                                  <h3 class="newsTitle">Ambulance Services for Events</h3>
+                                                  <h6 class="newsDate">April 3, 2021</h6>
+                                             </div>
+                                          </a>
+                                     </div>
+                                </div>
+                           </div>
+                      </div>
+                       
+                  </div>
+             </div>
+    </section>
+    <!--jobCategory end-->
+
+    <!--footer-->
+    <footer class="footer section_padding">
+          <div class="container">
+              <div class="row">
+                   <div class="footerColumn">
+                        <h3>Public Awareness</h3>
+                        <ul class="footerLinks">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Explore Links</h3>
+                        <ul class="footerLinks">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Contact Us</h3>
+                        <address>National Ambulance Head Office<br>
+                             Level 13, Aldar HQ Building<br>Al Raha Beach, Abu Dhabi, UAE
+                        </address>
+                        <a class="footerPhone" href="tel:+971 2 596 8600">+971 2 596 8600</a>
+                        <p class="poBox">PO. BOX: 63788, Abu Dhabi, UAE</p>
+                        <a class="footerEmail" href="mailto:info@nationalambulance.ae">info@nationalambulance.ae</a>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Working Hours</h3>
+                        <p>24/7 for Frontline Emergency Service<br>in the Northern Emirates Head Office</p>
+                          <p class="m-0">Sunday to Thursday</p>
+                          <p>8:00 AM- 4:30 PM</p>
+                   </div>
+                   <div class="footerSocial">
+                        <a class="facebook" href="#" target="_blank">
+                           <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.97 96.12"><path d="M72.09,0,59.62,0c-14,0-23,9.28-23,23.66v10.9H24a2,2,0,0,0-2,2V52.33a2,2,0,0,0,2,2H36.57V94.16a2,2,0,0,0,2,2H54.88a2,2,0,0,0,2-2V54.29H71.5a2,2,0,0,0,2-2V36.52a2,2,0,0,0-2-2H56.84V25.32c0-4.45,1.06-6.7,6.85-6.7h8.4a2,2,0,0,0,2-2V2A2,2,0,0,0,72.09,0Z" transform="translate(-22.08)"/></svg>
+                        </a>
+                        <a class="twitter" href="#" target="_blank">
+                           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13"><path d="M16,3.54a6.31,6.31,0,0,1-1.88.51,3.33,3.33,0,0,0,1.44-1.81A6.54,6.54,0,0,1,13.48,3a3.32,3.32,0,0,0-2.4-1A3.28,3.28,0,0,0,7.8,5.28,3.67,3.67,0,0,0,7.88,6,9.32,9.32,0,0,1,1.12,2.6,3.19,3.19,0,0,0,.67,4.25,3.28,3.28,0,0,0,2.13,7,3.42,3.42,0,0,1,.64,6.57v0A3.28,3.28,0,0,0,3.28,9.83a3.58,3.58,0,0,1-.87.12,4.2,4.2,0,0,1-.62-.06,3.3,3.3,0,0,0,3.07,2.28,6.6,6.6,0,0,1-4.08,1.4,6.57,6.57,0,0,1-.78,0A9.3,9.3,0,0,0,5,15a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-.28,0-.42A6.63,6.63,0,0,0,16,3.54Z" transform="translate(0 -2)"/></svg> 
+                        </a>
+                        <a class="linkedin" href="#" target="_blank">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13"><path d="M6,6H8.77V7.42h0A3.05,3.05,0,0,1,11.54,6C14.46,6,15,7.82,15,10.18V15H12.11V10.73c0-1,0-2.33-1.5-2.33S8.88,9.51,8.88,10.66V15H6ZM1,6H4v9H1ZM4,3.5A1.5,1.5,0,1,1,2.5,2,1.5,1.5,0,0,1,4,3.5Z" transform="translate(-1 -2)"/></svg>
+                        </a>
+                        <a class="googlePlus" href="#" target="_blank">
+                           <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.4 604.35"><g id="google-plus"><path d="M516.38,255V178.5h-51V255h-76.5v51h76.5v76.5h51V306h76.5V255ZM320,341.7l-28-20.4c-10.2-7.65-20.39-17.85-20.39-35.7s12.75-33.15,25.5-40.8c33.15-25.5,66.3-53.55,66.3-109.65,0-53.55-33.15-84.15-51-99.45h43.35L386.33,0H228.23C116,0,59.93,71.4,59.93,147.9c0,58.65,45.9,122.4,127.5,122.4h20.39c-2.55,7.65-10.19,20.4-10.19,33.15,0,25.5,10.19,35.7,22.94,51-35.69,2.55-102,10.2-150.44,40.8-45.91,28.05-58.66,66.3-58.66,94.35,0,58.65,53.55,114.75,168.3,114.75,137.7,0,204-76.5,204-150.45C383.77,400.35,355.73,372.3,320,341.7Zm-193.8-232c0-56.1,33.16-81.6,68.85-81.6,66.31,0,102,89.25,102,140.25,0,66.3-53.55,79-73.95,79C159.38,247.35,126.22,168.3,126.22,109.65Zm91.8,459c-84.15,0-137.7-38.25-137.7-94.35s51-73.95,66.3-81.6c33.15-10.2,76.5-12.75,84.15-12.75h17.85c61.2,43.35,86.7,61.2,86.7,102C335.32,530.4,286.88,568.65,218,568.65Z" transform="translate(-11.47 0)"/></g></svg>
+                        </a>
+                   </div>
+              </div>
+          </div>
+          <div class="footerBotm">
+               <div class="container">
+                    <div class="row">
+                         <div class="ISO_logo"><img src="images/ISO-9001.png" alt="ISO-9001"></div>
+                         <div class="JCI_logo"><img src="images/JCI-logo.png" alt="JCI"></div>
+                    </div>
+               </div>
+          </div>
+          <div class="copyRight">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 text-center">
+                              <p>Copyright 2021 © National Ambulance. All Rights Reserved</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+    </footer>
+    <!--/ footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
+
+

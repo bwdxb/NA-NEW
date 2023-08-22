@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header">
+        <div class="topNav">
+             <div class="container">
+                 <ul>
+                    <li><a class="empPortal" href="#">Employee Portal</a></li>
+                    <li><a class="lang" href="#">العربية</a></li>
+                 </ul>                  
+             </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container justify-content-space-between">
+                <a class="logo" href="#">
+                   <img class="whiteLogo" src="images/logo.png" alt="National Ambulance">
+                   <img class="fixedNav_logo" src="images/logo_navyblue.png" alt="National Ambulance">
+                </a>
+                <div class="mobShow">
+                     <div class="topSearch">
+                         <button class="mob_searchBtn">
+                               <svg id="seacrh_icon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="cls-1" d="M375.73,330.48A206.52,206.52,0,0,0,416,208C416,93.31,322.69,0,208,0S0,93.31,0,208,93.31,416,208,416a206.57,206.57,0,0,0,122.49-40.27L466.75,512,512,466.75ZM208,352c-79.41,0-144-64.59-144-144S128.59,64,208,64s144,64.6,144,144S287.4,352,208,352Z"/></svg>
+                               <svg id="close_icon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357 357"><g id="close"><polygon class="cls-1" points="357 35.7 321.3 0 178.5 142.8 35.7 0 0 35.7 142.8 178.5 0 321.3 35.7 357 178.5 214.2 321.3 357 357 321.3 214.2 178.5 357 35.7"/></g></svg>
+                         </button>
+                     </div>
+                     <form id="mobSearch" class="toggleSearch" style="display:none;" action="">
+                           <input type="text" class="form-control " placeholder="Search here...">
+                     </form>
+                     <button class="navbar-toggler">
+                         <span class="burger_line"></span>
+                     </button>
+                </div>                
+                <div class="navbar-collapse" id="navbar_menu">
+                    <ul class="navbar-nav" id="menu">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">About US</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Who We Are</a></li>
+                              <li><a href="#">Mission & Vision</a></li>
+                              <li><a href="#">CEO Message</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Public Emergency Service </a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">National Emergency Response</a></li>
+                                    <li><a href="#">Northern Emirates</a></li> 
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Our Commitment</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Quality, Health, Safety & Environment</a></li>
+                                    <li><a href="#">Patient Rights</a></li>
+                                    <li><a href="#">Corporate Social Responsibility </a></li> 
+                                </ul>
+                              </li>
+                              <li><a href="#">Board of Directors</a></li>
+                              <li><a href="#">FAQ’s</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">How We Work</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Clinical Governance</a></li>
+                              <li><a href="#">QHSE Management System</a></li>
+                              <li><a href="#">International Accreditations</a></li>
+                              <li><a href="#">Modern Medical Equipment</a></li>
+                              <li><a href="#">Procurement</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">
+                            Services
+                          </a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Emergency Care Solutions</a></li>
+                              <li><a href="#">Emergency Medical Services (EMS)</a></li>
+                              <li><a href="#">On-Site Medical Support</a></li>
+                              <li><a href="#">Event Coverage</a></li>
+                              <li><a href="#">Helicopter Emergency Medical Services (HEMS)</a></li>
+                              <li><a href="#">Patient Transport</a></li>
+                              <li><a href="#">Clinical Manpower Services</a></li>
+                              <li><a href="#">EMS Consulting Services</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Education And Training</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Healthcare Professionals</a></li>
+                                    <li><a href="#">Emergency Medical Services</a></li> 
+                                    <li><a href="#">Specialty Courses</a></li> 
+                                </ul>
+                              </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Careers</a>
+                          <ul id="submenu" class="subMenu">
+                              <li class="subNav">
+                                <a class="subLink" href="#">Working With Us</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Why National Ambulance?</a></li>
+                                    <li><a href="#">Meet Our Staff (Staff Testimonials)</a></li>
+                                    <li><a href="#">Message from our CEO/ Message from HR Manager</a></li>  
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Opportunities</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Clinical Careers</a></li>
+                                    <li><a href="#">Non Clinical Careers</a></li>
+                                </ul>
+                              </li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Emiratisation</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Opportunities For UAE Nationals</a></li>
+                                    <li><a href="#">Clinical Careers</a></li>
+                                    <li><a href="#">Non Clinical Careers</a></li>
+                                </ul>
+                              </li>
+                          </ul>                      
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Media</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">News</a></li>
+                              <li><a href="#">Social Media</a></li>
+                              <li><a href="#"> Blog + Patient Testimonials</a></li>
+                              <li><a href="#">Upcoming Events</a></li>
+                              <li><a href="#">Campaigns</a></li>
+                              <li><a href="#">Publications</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdownMenu">
+                          <a class="nav-link" href="#">Contact Us</a>
+                          <ul id="submenu" class="subMenu">
+                              <li><a href="#">Emergency</a></li>
+                              <li><a href="#">Non Emergency</a></li>
+                              <li class="subNav">
+                                <a class="subLink" href="#">Feedback</a>
+                                <ul id="menuLevel2" class="subMenu level_2">
+                                    <li><a href="#">Compliments, Complaints Or Suggestions</a></li>
+                                    <li><a href="#">Surveys</a></li>
+                                    <li><a href="#">Patient Testimonials</a></li>
+                                </ul>
+                              </li>
+                          </ul>              
+                        </li>
+                    </ul>
+                    <div class="topSearch mobHide">
+                         <button class="searchBtn"></button>
+                    </div>
+                    <form id="deskSearch" class="toggleSearch mobHide" style="display:none;" action="">
+                         <input type="text" class="form-control " placeholder="Search here...">
+                    </form>
+                    <a class="mob_lang" href="#">العربية</a>
+                </div>
+              </div>
+        </nav>        
+    </header>
+    <!--header end-->
+    <section class="contactMap">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d232210.27422240298!2d54.52338247787148!3d24.57934017181273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.442162!2d54.576612!4m5!1s0x3e5e55eafe1316eb%3A0x1df77307b1e1d1ab!2snational%20ambulance%20warehouse!3m2!1d24.719741799999998!2d54.7295951!5e0!3m2!1sen!2sin!4v1620373714977!5m2!1sen!2sin" width="1920" height="450" class="locationMap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contactWrapper section_padding">
+            <div class="container">
+                 <div class="row">
+                      <div class="col-md-12 mb-5">
+                           <h2 class="wrapTitle">Contact Us</h2>
+                           <h4 class="cRed">For Emergency Ambulance Call 998</h4>
+                           <p>If someone is seriously ill or injured, and their life is at risk, you should call 998 immediately. National Ambulance cannot accept emergency requests via the website. This section explains how you can contact us when it is not a medical emergency.</p>
+                      </div>
+                      <div class="col-md-5">
+                           <h4 class="mb-3">Contact Info</h4>
+                           <ul class="contact_address">
+                               <li>
+                                  <strong>Head Office:</strong>
+                                  <p>Opening Hours 8:00AM to 4:30PM <br>Sunday to Thursday excluding public holidays</p>
+                               </li>
+                               <li>
+                                  <strong>Address:</strong>
+                                  <p>Level 13 Al Dar Headquarters Building,<br>Al Raha Beach Abu Dhabi,<br>United Arab Emirates</p>
+                               </li>
+                               <li>
+                                  <strong>Phone:</strong>
+                                  <p>+971 2 596 8600</p>
+                               </li>
+                               <li>
+                                  <strong>Email:</strong>
+                                  <p>info@nationalambulance.ae</p>
+                               </li>  
+                               <li>
+                                  <strong>Postal Address:</strong>
+                                  <p>National Ambulance PO Box 63788,<br>Abu Dhabi, UAE</p>
+                               </li> 
+                           </ul>
+                           <div class="socialWidget">
+                                <h4>Get Social</h4>
+                                <a class="facebook" href="#" target="_blank">
+                                   <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.97 96.12"><path d="M72.09,0,59.62,0c-14,0-23,9.28-23,23.66v10.9H24a2,2,0,0,0-2,2V52.33a2,2,0,0,0,2,2H36.57V94.16a2,2,0,0,0,2,2H54.88a2,2,0,0,0,2-2V54.29H71.5a2,2,0,0,0,2-2V36.52a2,2,0,0,0-2-2H56.84V25.32c0-4.45,1.06-6.7,6.85-6.7h8.4a2,2,0,0,0,2-2V2A2,2,0,0,0,72.09,0Z" transform="translate(-22.08)"/></svg>
+                                </a>
+                                <a class="twitter" href="#" target="_blank">
+                                   <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13"><path d="M16,3.54a6.31,6.31,0,0,1-1.88.51,3.33,3.33,0,0,0,1.44-1.81A6.54,6.54,0,0,1,13.48,3a3.32,3.32,0,0,0-2.4-1A3.28,3.28,0,0,0,7.8,5.28,3.67,3.67,0,0,0,7.88,6,9.32,9.32,0,0,1,1.12,2.6,3.19,3.19,0,0,0,.67,4.25,3.28,3.28,0,0,0,2.13,7,3.42,3.42,0,0,1,.64,6.57v0A3.28,3.28,0,0,0,3.28,9.83a3.58,3.58,0,0,1-.87.12,4.2,4.2,0,0,1-.62-.06,3.3,3.3,0,0,0,3.07,2.28,6.6,6.6,0,0,1-4.08,1.4,6.57,6.57,0,0,1-.78,0A9.3,9.3,0,0,0,5,15a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-.28,0-.42A6.63,6.63,0,0,0,16,3.54Z" transform="translate(0 -2)"/></svg> 
+                                </a>
+                                <a class="linkedin" href="#" target="_blank">
+                                  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13"><path d="M6,6H8.77V7.42h0A3.05,3.05,0,0,1,11.54,6C14.46,6,15,7.82,15,10.18V15H12.11V10.73c0-1,0-2.33-1.5-2.33S8.88,9.51,8.88,10.66V15H6ZM1,6H4v9H1ZM4,3.5A1.5,1.5,0,1,1,2.5,2,1.5,1.5,0,0,1,4,3.5Z" transform="translate(-1 -2)"/></svg>
+                                </a>
+                                <a class="googlePlus" href="#" target="_blank">
+                                   <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.4 604.35"><g id="google-plus"><path d="M516.38,255V178.5h-51V255h-76.5v51h76.5v76.5h51V306h76.5V255ZM320,341.7l-28-20.4c-10.2-7.65-20.39-17.85-20.39-35.7s12.75-33.15,25.5-40.8c33.15-25.5,66.3-53.55,66.3-109.65,0-53.55-33.15-84.15-51-99.45h43.35L386.33,0H228.23C116,0,59.93,71.4,59.93,147.9c0,58.65,45.9,122.4,127.5,122.4h20.39c-2.55,7.65-10.19,20.4-10.19,33.15,0,25.5,10.19,35.7,22.94,51-35.69,2.55-102,10.2-150.44,40.8-45.91,28.05-58.66,66.3-58.66,94.35,0,58.65,53.55,114.75,168.3,114.75,137.7,0,204-76.5,204-150.45C383.77,400.35,355.73,372.3,320,341.7Zm-193.8-232c0-56.1,33.16-81.6,68.85-81.6,66.31,0,102,89.25,102,140.25,0,66.3-53.55,79-73.95,79C159.38,247.35,126.22,168.3,126.22,109.65Zm91.8,459c-84.15,0-137.7-38.25-137.7-94.35s51-73.95,66.3-81.6c33.15-10.2,76.5-12.75,84.15-12.75h17.85c61.2,43.35,86.7,61.2,86.7,102C335.32,530.4,286.88,568.65,218,568.65Z" transform="translate(-11.47 0)"/></g></svg>
+                                </a>
+                           </div>
+                      </div>
+                      <div class="col-md-7">
+                           <div class="form_panel">       
+                                <form method="post" class="generalForm" action="http://na.bw.ae/national-ambulance/contact_store" id="contactForm" name="contactForm" enctype="multipart/form-data" novalidate="novalidate">
+                                   <input type="hidden" name="_token" value="tAdw8wqFxzLXdmZc2Rf7Sq0OHBeLoMCplj29jQC6">
+                                    <div class="form_column">
+                                      <h4 class="mb-3">Get in Touch</h4>
+                                      <div class="row">                                        
+                                          <div class="form-group col-md-12">
+                                          <select id="inputCountry" name="enquiry_type" class="form-control">
+                                            <option value="">Type of Enquiry</option>
+                                            <option value="General Enquiry">General Enquiry</option>
+                                            <option value="Procurement and Supply Chain">Procurement and Supply Chain</option>
+                                            <option value="Education and Training">Education and Training</option>
+                                            <option value="Events� Ambulance Coverage">Event's Ambulance Coverage</option>
+                                            <option value=" Non-Emergency Medical Transport"> Non-Emergency Medical Transport</option>
+                                            <option value="Emergency Medical Services">Emergency Medical Services</option>
+                                            <option value="Media">Media</option>
+                                            <option value="Website Issues">Website Issues</option>  
+                                            </select>
+                                        </div>
+                                          
+                                        </div>
+                                      <div class="row">
+                                      <div class="form-group col-md-4">
+                                          <select id="title" name="title" class="form-control">
+                                          <option value="">Select</option>
+                                          <option value="Mr">Mr</option>
+                                          <option value="Mrs">Mrs</option>
+                                          <option value="Miss">Miss</option>
+                                          </select>
+                                        </div>
+                                      <div class="form-group col-md-8">
+                                          <input type="text" class="form-control" name="name" placeholder="Name *">
+                                        </div>  
+                                      </div>
+                                      <div class="row">                                
+                                          <div class="form-group col-md-12">
+                                            <input type="text" name="mobile" class="form-control" placeholder="Contact Number *">
+                                          </div>
+                                      </div> 
+                                      <div class="row">
+                                          <div class="form-group col-md-6">
+                                               <input type="text" name="email" class="form-control" placeholder="Email *">
+                                          </div>
+                                          <div class="form-group col-md-6">
+                                              <select id="inputCountry" name="country_id" class="form-control">
+                                                      <option value="">Country</option>
+                                                      <option value="Afghanistan">Afghanistan</option>
+                                                      <option value="Aland Islands">Aland Islands</option>
+                                                      <option value="Albania">Albania</option>
+                                                      <option value="Algeria">Algeria</option>
+                                                      <option value="American Samoa">American Samoa</option>
+                                                      <option value="Andorra">Andorra</option>
+                                                      <option value="Angola">Angola</option>
+                                                      <option value="Anguilla">Anguilla</option>
+                                                      <option value="Antarctica">Antarctica</option>
+                                                      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                                      <option value="Argentina">Argentina</option>
+                                                      <option value="Armenia">Armenia</option>
+                                                      <option value="Aruba">Aruba</option>
+                                                      <option value="Australia">Australia</option>
+                                                      <option value="Austria">Austria</option>
+                                                      <option value="Azerbaijan">Azerbaijan</option>
+                                                      <option value="Bahamas">Bahamas</option>
+                                                      <option value="Bahrain">Bahrain</option>
+                                                      <option value="Bangladesh">Bangladesh</option>
+                                                      <option value="Barbados">Barbados</option>
+                                                      <option value="Belarus">Belarus</option>
+                                                      <option value="Belgium">Belgium</option>
+                                                      <option value="Belize">Belize</option>
+                                                      <option value="Benin">Benin</option>
+                                                      <option value="Bermuda">Bermuda</option>
+                                                      <option value="Bhutan">Bhutan</option>
+                                                      <option value="Bolivia">Bolivia</option>
+                                                      <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                                      <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                                      <option value="Botswana">Botswana</option>
+                                                      <option value="Bouvet Island">Bouvet Island</option>
+                                                      <option value="Brazil">Brazil</option>
+                                                      <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                                      <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                                      <option value="Bulgaria">Bulgaria</option>
+                                                      <option value="Burkina Faso">Burkina Faso</option>
+                                                      <option value="Burundi">Burundi</option>
+                                                      <option value="Cambodia">Cambodia</option>
+                                                      <option value="Cameroon">Cameroon</option>
+                                                      <option value="Canada">Canada</option>
+                                                      <option value="Cape Verde">Cape Verde</option>
+                                                      <option value="Cayman Islands">Cayman Islands</option>
+                                                      <option value="Central African Republic">Central African Republic</option>
+                                                      <option value="Chad">Chad</option>
+                                                      <option value="Chile">Chile</option>
+                                                      <option value="China">China</option>
+                                                      <option value="Christmas Island">Christmas Island</option>
+                                                      <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                                      <option value="Colombia">Colombia</option>
+                                                      <option value="Comoros">Comoros</option>
+                                                      <option value="Congo">Congo</option>
+                                                      <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+                                                      <option value="Cook Islands">Cook Islands</option>
+                                                      <option value="Costa Rica">Costa Rica</option>
+                                                      <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                                                      <option value="Croatia">Croatia</option>
+                                                      <option value="Cuba">Cuba</option>
+                                                      <option value="Curacao">Curacao</option>
+                                                      <option value="Cyprus">Cyprus</option>
+                                                      <option value="Czech Republic">Czech Republic</option>
+                                                      <option value="Denmark">Denmark</option>
+                                                      <option value="Djibouti">Djibouti</option>
+                                                      <option value="Dominica">Dominica</option>
+                                                      <option value="Dominican Republic">Dominican Republic</option>
+                                                      <option value="Ecuador">Ecuador</option>
+                                                      <option value="Egypt">Egypt</option>
+                                                      <option value="El Salvador">El Salvador</option>
+                                                      <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                                      <option value="Eritrea">Eritrea</option>
+                                                      <option value="Estonia">Estonia</option>
+                                                      <option value="Ethiopia">Ethiopia</option>
+                                                      <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                                      <option value="Faroe Islands">Faroe Islands</option>
+                                                      <option value="Fiji">Fiji</option>
+                                                      <option value="Finland">Finland</option>
+                                                      <option value="France">France</option>
+                                                      <option value="French Guiana">French Guiana</option>
+                                                      <option value="French Polynesia">French Polynesia</option>
+                                                      <option value="French Southern Territories">French Southern Territories</option>
+                                                      <option value="Gabon">Gabon</option>
+                                                      <option value="Gambia">Gambia</option>
+                                                      <option value="Georgia">Georgia</option>
+                                                      <option value="Germany">Germany</option>
+                                                      <option value="Ghana">Ghana</option>
+                                                      <option value="Gibraltar">Gibraltar</option>
+                                                      <option value="Greece">Greece</option>
+                                                      <option value="Greenland">Greenland</option>
+                                                      <option value="Grenada">Grenada</option>
+                                                      <option value="Guadeloupe">Guadeloupe</option>
+                                                      <option value="Guam">Guam</option>
+                                                      <option value="Guatemala">Guatemala</option>
+                                                      <option value="Guernsey">Guernsey</option>
+                                                      <option value="Guinea">Guinea</option>
+                                                      <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                                      <option value="Guyana">Guyana</option>
+                                                      <option value="Haiti">Haiti</option>
+                                                      <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                                      <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                                      <option value="Honduras">Honduras</option>
+                                                      <option value="Hong Kong">Hong Kong</option>
+                                                      <option value="Hungary">Hungary</option>
+                                                      <option value="Iceland">Iceland</option>
+                                                      <option value="India">India</option>
+                                                      <option value="Indonesia">Indonesia</option>
+                                                      <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                                      <option value="Iraq">Iraq</option>
+                                                      <option value="Ireland">Ireland</option>
+                                                      <option value="Isle of Man">Isle of Man</option>
+                                                      <option value="Israel">Israel</option>
+                                                      <option value="Italy">Italy</option>
+                                                      <option value="Jamaica">Jamaica</option>
+                                                      <option value="Japan">Japan</option>
+                                                      <option value="Jersey">Jersey</option>
+                                                      <option value="Jordan">Jordan</option>
+                                                      <option value="Kazakhstan">Kazakhstan</option>
+                                                      <option value="Kenya">Kenya</option>
+                                                      <option value="Kiribati">Kiribati</option>
+                                                      <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                                      <option value="Korea, Republic of">Korea, Republic of</option>
+                                                      <option value="Kosovo">Kosovo</option>
+                                                      <option value="Kuwait">Kuwait</option>
+                                                      <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                                      <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                                      <option value="Latvia">Latvia</option>
+                                                      <option value="Lebanon">Lebanon</option>
+                                                      <option value="Lesotho">Lesotho</option>
+                                                      <option value="Liberia">Liberia</option>
+                                                      <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                                      <option value="Liechtenstein">Liechtenstein</option>
+                                                      <option value="Lithuania">Lithuania</option>
+                                                      <option value="Luxembourg">Luxembourg</option>
+                                                      <option value="Macao">Macao</option>
+                                                      <option value="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option>
+                                                      <option value="Madagascar">Madagascar</option>
+                                                      <option value="Malawi">Malawi</option>
+                                                      <option value="Malaysia">Malaysia</option>
+                                                      <option value="Maldives">Maldives</option>
+                                                      <option value="Mali">Mali</option>
+                                                      <option value="Malta">Malta</option>
+                                                      <option value="Marshall Islands">Marshall Islands</option>
+                                                      <option value="Martinique">Martinique</option>
+                                                      <option value="Mauritania">Mauritania</option>
+                                                      <option value="Mauritius">Mauritius</option>
+                                                      <option value="Mayotte">Mayotte</option>
+                                                      <option value="Mexico">Mexico</option>
+                                                      <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                                      <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                                      <option value="Monaco">Monaco</option>
+                                                      <option value="Mongolia">Mongolia</option>
+                                                      <option value="Montenegro">Montenegro</option>
+                                                      <option value="Montserrat">Montserrat</option>
+                                                      <option value="Morocco">Morocco</option>
+                                                      <option value="Mozambique">Mozambique</option>
+                                                      <option value="Myanmar">Myanmar</option>
+                                                      <option value="Namibia">Namibia</option>
+                                                      <option value="Nauru">Nauru</option>
+                                                      <option value="Nepal">Nepal</option>
+                                                      <option value="Netherlands">Netherlands</option>
+                                                      <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                                      <option value="New Caledonia">New Caledonia</option>
+                                                      <option value="New Zealand">New Zealand</option>
+                                                      <option value="Nicaragua">Nicaragua</option>
+                                                      <option value="Niger">Niger</option>
+                                                      <option value="Nigeria">Nigeria</option>
+                                                      <option value="Niue">Niue</option>
+                                                      <option value="Norfolk Island">Norfolk Island</option>
+                                                      <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                                      <option value="Norway">Norway</option>
+                                                      <option value="Oman">Oman</option>
+                                                      <option value="Pakistan">Pakistan</option>
+                                                      <option value="Palau">Palau</option>
+                                                      <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                                      <option value="Panama">Panama</option>
+                                                      <option value="Papua New Guinea">Papua New Guinea</option>
+                                                      <option value="Paraguay">Paraguay</option>
+                                                      <option value="Peru">Peru</option>
+                                                      <option value="Philippines">Philippines</option>
+                                                      <option value="Pitcairn">Pitcairn</option>
+                                                      <option value="Poland">Poland</option>
+                                                      <option value="Portugal">Portugal</option>
+                                                      <option value="Puerto Rico">Puerto Rico</option>
+                                                      <option value="Qatar">Qatar</option>
+                                                      <option value="Reunion">Reunion</option>
+                                                      <option value="Romania">Romania</option>
+                                                      <option value="Russian Federation">Russian Federation</option>
+                                                      <option value="Rwanda">Rwanda</option>
+                                                      <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                                      <option value="Saint Helena">Saint Helena</option>
+                                                      <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                                      <option value="Saint Lucia">Saint Lucia</option>
+                                                      <option value="Saint Martin">Saint Martin</option>
+                                                      <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                                      <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                                      <option value="Samoa">Samoa</option>
+                                                      <option value="San Marino">San Marino</option>
+                                                      <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                                      <option value="Saudi Arabia">Saudi Arabia</option>
+                                                      <option value="Senegal">Senegal</option>
+                                                      <option value="Serbia">Serbia</option>
+                                                      <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                                                      <option value="Seychelles">Seychelles</option>
+                                                      <option value="Sierra Leone">Sierra Leone</option>
+                                                      <option value="Singapore">Singapore</option>
+                                                      <option value="Sint Maarten">Sint Maarten</option>
+                                                      <option value="Slovakia">Slovakia</option>
+                                                      <option value="Slovenia">Slovenia</option>
+                                                      <option value="Solomon Islands">Solomon Islands</option>
+                                                      <option value="Somalia">Somalia</option>
+                                                      <option value="South Africa">South Africa</option>
+                                                      <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                                                      <option value="South Sudan">South Sudan</option>
+                                                      <option value="Spain">Spain</option>
+                                                      <option value="Sri Lanka">Sri Lanka</option>
+                                                      <option value="Sudan">Sudan</option>
+                                                      <option value="Suriname">Suriname</option>
+                                                      <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                                      <option value="Swaziland">Swaziland</option>
+                                                      <option value="Sweden">Sweden</option>
+                                                      <option value="Switzerland">Switzerland</option>
+                                                      <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                                      <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                                      <option value="Tajikistan">Tajikistan</option>
+                                                      <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                                      <option value="Thailand">Thailand</option>
+                                                      <option value="Timor-Leste">Timor-Leste</option>
+                                                      <option value="Togo">Togo</option>
+                                                      <option value="Tokelau">Tokelau</option>
+                                                      <option value="Tonga">Tonga</option>
+                                                      <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                                      <option value="Tunisia">Tunisia</option>
+                                                      <option value="Turkey">Turkey</option>
+                                                      <option value="Turkmenistan">Turkmenistan</option>
+                                                      <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                                      <option value="Tuvalu">Tuvalu</option>
+                                                      <option value="Uganda">Uganda</option>
+                                                      <option value="Ukraine">Ukraine</option>
+                                                      <option value="United Arab Emirates">United Arab Emirates</option>
+                                                      <option value="United Kingdom">United Kingdom</option>
+                                                      <option value="United States">United States</option>
+                                                      <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                                      <option value="Uruguay">Uruguay</option>
+                                                      <option value="Uzbekistan">Uzbekistan</option>
+                                                      <option value="Vanuatu">Vanuatu</option>
+                                                      <option value="Venezuela">Venezuela</option>
+                                                      <option value="Viet Nam">Viet Nam</option>
+                                                      <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                                      <option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+                                                      <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                                      <option value="Western Sahara">Western Sahara</option>
+                                                      <option value="Yemen">Yemen</option>
+                                                      <option value="Zambia">Zambia</option>
+                                                      <option value="Zimbabwe">Zimbabwe</option>
+                                              </select>
+                                          </div>                                     
+                                      </div>                                                                          
+                                                                           
+                                      <div class="row">                                
+                                          <div class="form-group col-md-12">
+                                            <textarea name="description" class="form-control" rows="5" placeholder="Description *"></textarea>
+                                          </div>
+                                      </div>                                      
+                                      <div class="row">
+                                      <div class="form-group">
+
+                                            <div class="col-md-6">
+
+                                                <div class="captcha">
+
+                                                <span><img src="http://na.bw.ae/national-ambulance/captcha/default?wXb7UBhv"></span>
+
+                                                <button type="button" class="btn btn-success btn-refresh"><i class="fas fa-sync-alt"></i></button>
+
+                                                </div>
+
+                                                <input id="captcha" type="text" class="form-control" placeholder="Enter Captcha" name="captcha">
+
+                                                
+                                            </div>
+
+                                        </div>
+                                      </div>
+                                       
+                                       
+                                    </div>
+                                    <div class="form_column">
+                                        <div class="row">
+                                          <div class="btn_column form-group col-md-12">
+                                             <button type="submit" class="default_btn">Submit</button>
+                                          </div>
+                                        </div>
+                                    </div>              
+                                </form>  
+                           </div>
+                      </div>
+                 </div>
+            </div>
+    </section>
+    <section class="FeedbackContent">
+            <div class="container">
+                 <div class="row">
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/feedback.svg"/></i>
+                                <h5>Feedback</h5>
+                                <p>We value feedback, whether positive or negative, and use it to improve our services. Please visit our Feedback page to send us your comments or share your experience with us.</p>
+                                <a class="FeedbackLink" href="#">Go to Feedback</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/career.svg"/></i>
+                                <h5>Career Opportunities</h5>
+                                <p>For employment related enquiries or to view current vacancies and apply, please visit our <strong>Careers Portal</strong>.</p>
+                                <a class="FeedbackLink" href="#">Go to Career Opportunities</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/supplier.svg"/></i>
+                                <h5>Suppliers</h5>
+                                <p>To register your company’s interest as a supplier for National Ambulance UAE, please visit the <strong>Supplier Registration Form</strong> and follow the application process.</p>
+                                <a class="FeedbackLink" href="#">Go to Suppliers</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/education.svg"/></i>
+                                <h5>Training and Education</h5>
+                                <p>To enquire/ learn about our upcoming training courses offered by National Ambulance, please visit the</strong> Training and Education page.</p>
+                                <a class="FeedbackLink" href="#">Go to Training and Education</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/coverage.svg"/></i>
+                                <h5>Event’s Ambulance Coverage</h5>
+                                <p>If you are holding an event and need National Ambulance’s assistance, please visit the Events’ <strong>Ambulance Coverage Form</strong> to request this service.</p>
+                                <a class="FeedbackLink" href="#">Event’s Ambulance Coverage</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/ambulance-white.svg"/></i>
+                                <h5>Non-Emergency Medical Transport</h5>
+                                <p>Do you require a professional non-urgent medical transport to, from or between hospitals? Please visit the <strong>Non-Emergency Medical Transport Form</strong> and follow the process to request this service.</p>
+                                <a class="FeedbackLink" href="#">Non-Emergency Medical Transport</a>
+                           </div>
+                      </div>
+                      <div class="col-md-4">
+                           <div class="FeedbackBox">
+                                <i class="FdIcon"><img src="images/record.svg"/></i>
+                                <h5>Patient Care Record</h5>
+                                <p>To request a copy of a patient care record, please visit the <strong>Request Patient Care Record Form</strong> and follow the process to complete your request.</p>
+                                <a class="FeedbackLink" href="#">Go to Patient Care Record</a>
+                           </div>
+                      </div>
+                 </div>
+            </div>
+    </section>
+    <!--footer-->
+    <footer class="footer section_padding">
+          <div class="container">
+              <div class="row">
+                   <div class="footerColumn">
+                        <h3>Public Awareness</h3>
+                        <ul class="footerLinks">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Explore Links</h3>
+                        <ul class="footerLinks">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Contact Us</h3>
+                        <address>National Ambulance Head Office<br>
+                             Level 13, Aldar HQ Building<br>Al Raha Beach, Abu Dhabi, UAE
+                        </address>
+                        <a class="footerPhone" href="tel:+971 2 596 8600">+971 2 596 8600</a>
+                        <p class="poBox">PO. BOX: 63788, Abu Dhabi, UAE</p>
+                        <a class="footerEmail" href="mailto:info@nationalambulance.ae">info@nationalambulance.ae</a>
+                   </div>
+                   <div class="footerColumn">
+                        <h3>Working Hours</h3>
+                        <p>24/7 for Frontline Emergency Service<br>in the Northern Emirates Head Office</p>
+                          <p class="m-0">Sunday to Thursday</p>
+                          <p>8:00 AM- 4:30 PM</p>
+                   </div>
+                   <div class="footerSocial">
+                        <a class="facebook" href="#" target="_blank">
+                           <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.97 96.12"><path d="M72.09,0,59.62,0c-14,0-23,9.28-23,23.66v10.9H24a2,2,0,0,0-2,2V52.33a2,2,0,0,0,2,2H36.57V94.16a2,2,0,0,0,2,2H54.88a2,2,0,0,0,2-2V54.29H71.5a2,2,0,0,0,2-2V36.52a2,2,0,0,0-2-2H56.84V25.32c0-4.45,1.06-6.7,6.85-6.7h8.4a2,2,0,0,0,2-2V2A2,2,0,0,0,72.09,0Z" transform="translate(-22.08)"/></svg>
+                        </a>
+                        <a class="twitter" href="#" target="_blank">
+                           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13"><path d="M16,3.54a6.31,6.31,0,0,1-1.88.51,3.33,3.33,0,0,0,1.44-1.81A6.54,6.54,0,0,1,13.48,3a3.32,3.32,0,0,0-2.4-1A3.28,3.28,0,0,0,7.8,5.28,3.67,3.67,0,0,0,7.88,6,9.32,9.32,0,0,1,1.12,2.6,3.19,3.19,0,0,0,.67,4.25,3.28,3.28,0,0,0,2.13,7,3.42,3.42,0,0,1,.64,6.57v0A3.28,3.28,0,0,0,3.28,9.83a3.58,3.58,0,0,1-.87.12,4.2,4.2,0,0,1-.62-.06,3.3,3.3,0,0,0,3.07,2.28,6.6,6.6,0,0,1-4.08,1.4,6.57,6.57,0,0,1-.78,0A9.3,9.3,0,0,0,5,15a9.27,9.27,0,0,0,9.34-9.34c0-.14,0-.28,0-.42A6.63,6.63,0,0,0,16,3.54Z" transform="translate(0 -2)"/></svg> 
+                        </a>
+                        <a class="linkedin" href="#" target="_blank">
+                          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13"><path d="M6,6H8.77V7.42h0A3.05,3.05,0,0,1,11.54,6C14.46,6,15,7.82,15,10.18V15H12.11V10.73c0-1,0-2.33-1.5-2.33S8.88,9.51,8.88,10.66V15H6ZM1,6H4v9H1ZM4,3.5A1.5,1.5,0,1,1,2.5,2,1.5,1.5,0,0,1,4,3.5Z" transform="translate(-1 -2)"/></svg>
+                        </a>
+                        <a class="googlePlus" href="#" target="_blank">
+                           <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.4 604.35"><g id="google-plus"><path d="M516.38,255V178.5h-51V255h-76.5v51h76.5v76.5h51V306h76.5V255ZM320,341.7l-28-20.4c-10.2-7.65-20.39-17.85-20.39-35.7s12.75-33.15,25.5-40.8c33.15-25.5,66.3-53.55,66.3-109.65,0-53.55-33.15-84.15-51-99.45h43.35L386.33,0H228.23C116,0,59.93,71.4,59.93,147.9c0,58.65,45.9,122.4,127.5,122.4h20.39c-2.55,7.65-10.19,20.4-10.19,33.15,0,25.5,10.19,35.7,22.94,51-35.69,2.55-102,10.2-150.44,40.8-45.91,28.05-58.66,66.3-58.66,94.35,0,58.65,53.55,114.75,168.3,114.75,137.7,0,204-76.5,204-150.45C383.77,400.35,355.73,372.3,320,341.7Zm-193.8-232c0-56.1,33.16-81.6,68.85-81.6,66.31,0,102,89.25,102,140.25,0,66.3-53.55,79-73.95,79C159.38,247.35,126.22,168.3,126.22,109.65Zm91.8,459c-84.15,0-137.7-38.25-137.7-94.35s51-73.95,66.3-81.6c33.15-10.2,76.5-12.75,84.15-12.75h17.85c61.2,43.35,86.7,61.2,86.7,102C335.32,530.4,286.88,568.65,218,568.65Z" transform="translate(-11.47 0)"/></g></svg>
+                        </a>
+                   </div>
+              </div>
+          </div>
+          <div class="footerBotm">
+               <div class="container">
+                    <div class="row">
+                         <div class="ISO_logo"><img src="images/ISO-9001.png" alt="ISO-9001"></div>
+                         <div class="JCI_logo"><img src="images/JCI-logo.png" alt="JCI"></div>
+                    </div>
+               </div>
+          </div>
+          <div class="copyRight">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 text-center">
+                              <p>Copyright 2021 © National Ambulance. All Rights Reserved</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+    </footer>
+    <!--/ footer-->
+
+
+<!-- /End button popover  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
+
+
+

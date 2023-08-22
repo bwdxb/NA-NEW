@@ -1,0 +1,4067 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "B2B API Doc",
+        "description": "Api description...",
+        "termsOfService": "",
+        "contact": {
+            "email": "la-ankan@mobiloitte.com"
+        },
+        "version": "1.0.0"
+    },
+    "basePath": "/PROJECTS/b2b-and-ecommerce-platform-19103627-lamp/public",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "paths": {
+        "/api/signup": {
+            "post": {
+                "summary": "Sign Up",
+                "description": "Sign Up",
+                "operationId": "sign_up",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Sign Up",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "first_name": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "Lorem"
+                                },
+                                "last_name": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "Ipsum"
+                                },
+                                "email": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "admin@gmail.com"
+                                },
+                                "password": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "12345678"
+                                },
+                                "zip_code": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "123456"
+                                },
+                                "mobile": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "9999999999"
+                                },
+                                "address": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "New Delhi"
+                                },
+                                "device_token": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "token"
+                                },
+                                "device_type": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "gst_number": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "User registered successfully"
+                                },
+                                "status": {
+                                    "description": "Sign Up",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Sign Up",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Sign Up",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/login": {
+            "post": {
+                "summary": "Login",
+                "description": "Login",
+                "operationId": "login",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Login",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "mobile": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "9999999999"
+                                },
+                                "password": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "12345678"
+                                },
+                                "device_token": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "token"
+                                },
+                                "device_type": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "User Logged in successfully"
+                                },
+                                "status": {
+                                    "description": "Login",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Login",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Login",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/social_signup": {
+            "post": {
+                "summary": "Social Signup",
+                "description": "Social Signup",
+                "operationId": "Social_Signup",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Social Signup",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "first_name": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "Lorem"
+                                },
+                                "last_name": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "Ipsum"
+                                },
+                                "email": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "admin@gmail.com"
+                                },
+                                "social_type": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "google"
+                                },
+                                "social_id": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "123456"
+                                },
+                                "device_token": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "token"
+                                },
+                                "device_type": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "User Logged in successfully"
+                                },
+                                "status": {
+                                    "description": "Social Signup",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Social Signup",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Social Signup",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/verify_otp": {
+            "post": {
+                "summary": "Verify Otp",
+                "description": "Verify Otp",
+                "operationId": "verify_otp",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Verify Otp",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Verify Otp",
+                                    "type": "string",
+                                    "default": "Lorem"
+                                },
+                                "otp": {
+                                    "description": "Verify Otp",
+                                    "type": "string",
+                                    "default": "int"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Verify Otp",
+                                    "type": "string",
+                                    "default": "Otp verified successfully"
+                                },
+                                "status": {
+                                    "description": "Verify Otp",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Verify Otp",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Verify Otp",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/forgot_password": {
+            "post": {
+                "summary": "Forgot Password",
+                "description": "Forgot Password",
+                "operationId": "forgot_password",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Forgot Password",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "mobile": {
+                                    "description": "Forgot Password",
+                                    "type": "string",
+                                    "default": "Lorem"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Forgot Password",
+                                    "type": "string",
+                                    "default": "Message sent successfully"
+                                },
+                                "status": {
+                                    "description": "Forgot Password",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Forgot Password",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Forgot Password",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/reset_password": {
+            "post": {
+                "summary": "Reset Password",
+                "description": "Reset Password",
+                "operationId": "reset_password",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Reset Password",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Reset Password",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "new_password": {
+                                    "description": "Reset Password",
+                                    "type": "string",
+                                    "default": "12345678"
+                                },
+                                "confirm_password": {
+                                    "description": "Reset Password",
+                                    "type": "string",
+                                    "default": "12345678"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Reset Password",
+                                    "type": "string",
+                                    "default": "Password reset successfully"
+                                },
+                                "status": {
+                                    "description": "Reset Password",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Reset Password",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Reset Password",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/top_home": {
+            "post": {
+                "summary": "Top Home",
+                "description": "Top Home",
+                "operationId": "top_home",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Top Home",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Top Home",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Top Home",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Top Home",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Top Home",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Top Home",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/home_all_section": {
+            "post": {
+                "summary": "Home all sections",
+                "description": "Home all sections",
+                "operationId": "home_all_section",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Home all sections",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Home all sections",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Home all sections",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Home all sections",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Home all sections",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Home all sections",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/tutorial": {
+            "get": {
+                "summary": "Tutorials.",
+                "description": "Tutorial",
+                "responses": {
+                    "200": {
+                        "description": "Details fetched successfully"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/category": {
+            "post": {
+                "summary": "Category management",
+                "description": "Category management",
+                "operationId": "category",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Category management",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Category management",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "search": {
+                                    "description": "Category management",
+                                    "type": "string",
+                                    "default": "null"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Category management",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Category management",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Category management",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Category management",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/product_list": {
+            "post": {
+                "summary": "Product List",
+                "description": "Product List",
+                "operationId": "product_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Product List",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Product List",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "category_id": {
+                                    "description": "Product List",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "subcategory_id": {
+                                    "description": "Product List",
+                                    "type": "string",
+                                    "default": ""
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Product List",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Product List",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Product List",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Product List",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/add_to_cart": {
+            "post": {
+                "summary": "Add To Cart / Remove From Cart",
+                "description": "action = add for add to cart, action = remove for remove from cart",
+                "operationId": "add_to_cart",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Add To Cart",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Add To Cart / Remove From Cart",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Add To Cart / Remove From Cart",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "action": {
+                                    "description": "add action for add to cart, remove action for remove from cart",
+                                    "type": "string",
+                                    "default": "add"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Add To Cart / Remove From Cart",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Add To Cart / Remove From Cart",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Add To Cart / Remove From Cart",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Add To Cart / Remove From Cart",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/product_description": {
+            "post": {
+                "summary": "Product Description",
+                "description": "Product Description",
+                "operationId": "product_description",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Product Description",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Product Description",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Product Description",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "type": {
+                                    "description": "Product Description",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Product Description",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Product Description",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Product Description",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Product Description",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/order_review": {
+            "post": {
+                "summary": "Order Review",
+                "description": "action = Order Review",
+                "operationId": "order_review",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Add To Cart",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Order Review",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Order Review",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Order Review",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Order Review",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Order Review",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/coupon_list": {
+            "post": {
+                "summary": "Coupon List",
+                "description": "action = Coupon List",
+                "operationId": "coupon_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Coupon List",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Coupon List",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Coupon List",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Coupon List",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Coupon List",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Coupon List",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/add_address": {
+            "post": {
+                "summary": "Add Address",
+                "description": "action = Coupon List",
+                "operationId": "add_address",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Address Add",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "name": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "User"
+                                },
+                                "mobile": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "postal_code": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "gst_number": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "transport_name": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Add Address",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Add Address",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Add Address",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/sub_category": {
+            "post": {
+                "summary": "Sub Category",
+                "description": "Sub Category",
+                "operationId": "sub_category",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Sub Category",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Sub Category",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "category_id": {
+                                    "description": "Sub Category",
+                                    "type": "string",
+                                    "default": "null"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Sub Category",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Sub Category",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Sub Category",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Sub Category",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/change_address": {
+            "post": {
+                "summary": "Change Address",
+                "description": "Change Address",
+                "operationId": "change_address",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Change Address",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Change Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address_id": {
+                                    "description": "Change Address",
+                                    "type": "string",
+                                    "default": "null"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Change Address",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Change Address",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Change Address",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Change Address",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/address_list": {
+            "post": {
+                "summary": "List of delivery address",
+                "description": "List of delivery address",
+                "operationId": "address_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of delivery address",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "List of delivery address",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "List of delivery address",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "List of delivery address",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "List of delivery address",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "List of delivery address",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/add_cash_on_delivery": {
+            "post": {
+                "summary": "Add Cash on delivery option",
+                "description": "Add Cash on delivery option",
+                "operationId": "add_cash_on_delivery",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Add Cash on delivery option",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Add Cash on delivery option",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Add Cash on delivery option",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Add Cash on delivery option",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Add Cash on delivery option",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Add Cash on delivery option",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/delete_address": {
+            "post": {
+                "summary": "Delete Address",
+                "description": "Delete Address",
+                "operationId": "Delete_address",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "delete Address",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Delete Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address_id": {
+                                    "description": "Delete Address",
+                                    "type": "string",
+                                    "default": "null"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Delete Address",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Delete Address",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Delete Address",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Delete Address",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/change_password": {
+            "post": {
+                "summary": "Change Password",
+                "description": "Change Password",
+                "operationId": "change_password",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Change Password",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "oldpassword": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "null"
+                                },
+                                "newpassword": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "null"
+                                },
+                                "confirmpassword": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "null"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Change Password",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Change Password",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Change Password",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "summary": "Logout",
+                "description": "Logout",
+                "operationId": "logout",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Logout",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Logout",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Logout",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Logout",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Logout",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Logout",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/static_content": {
+            "post": {
+                "summary": "Static Content",
+                "description": "Static Content",
+                "operationId": "static_content",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Static Content",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Static Content",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Static Content",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Static Content",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Static Content",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Static Content",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/product_enquiry": {
+            "post": {
+                "summary": "Product Enquiry",
+                "description": "Product Enquiry",
+                "operationId": "product_enquiry",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Product Enquiry",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Product Enquiry",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "subject": {
+                                    "description": "Product Enquiry",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "message": {
+                                    "description": "Product Enquiry",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Product Enquiry",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Product Enquiry",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Product Enquiry",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Product Enquiry",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/order_history": {
+            "post": {
+                "summary": "My Order History",
+                "description": "My Order History",
+                "operationId": "order_history",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "My Order History",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "My Order History",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "My Order History",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "My Order History",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "My Order History",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "My Order History",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/my_profile": {
+            "post": {
+                "summary": "My Profile",
+                "description": "My Profile",
+                "operationId": "my_profile",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "My Profile",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "My Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "My Profile",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "My Profile",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "My Profile",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "My Profile",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/edit_profile": {
+            "post": {
+                "summary": "Edit Profile",
+                "description": "edit Profile",
+                "operationId": "edit_profile",
+                "consumes": [
+                    "form-data"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Edit Profile",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "first_name": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "last_name": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "mobile": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "email": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "gst_number": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "zip_code": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "image": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Edit Profile",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Edit Profile",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Edit Profile",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/save_product_question": {
+            "post": {
+                "summary": "Save Product Question",
+                "description": "Save Product Question",
+                "operationId": "save_product_question",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Save Product Question",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Save Product Question",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Save Product Question",
+                                    "type": "string",
+                                    "default": "8"
+                                },
+                                "question": {
+                                    "description": "Save Product Question",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Save Product Question",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Save Product Question",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Save Product Question",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Save Product Question",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/mall_section": {
+            "post": {
+                "summary": "Mall section",
+                "description": "Mall section",
+                "operationId": "mall_section",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Mall section",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "country_id": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "state_id": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "city_id": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Mall section",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Mall section",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Mall section",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/edit_address": {
+            "post": {
+                "summary": "Edit Address",
+                "description": "action = Edit Addredd",
+                "operationId": "edit_address",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Edit Address",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address_id": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "name": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "User"
+                                },
+                                "mobile": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "postal_code": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "address": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "gst_number": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "transport_name": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Edit Address",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Edit Address",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Edit Address",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/add_feedback": {
+            "post": {
+                "summary": "Feedback",
+                "description": "action = Feedback",
+                "operationId": "add_feedback",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Feedback",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "rating": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "comment": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "Lorem Ipsum"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Feedback",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Feedback",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Feedback",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/notification_list": {
+            "post": {
+                "summary": "Notification List",
+                "description": "action = Notification List",
+                "operationId": "notification_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Notification List",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Notification List",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Notification List",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Notification List",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Notification List",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Notification List",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/rate_app": {
+            "post": {
+                "summary": "Rate App",
+                "description": "action = Feedback",
+                "operationId": "rate_app",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Rate App",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Rate App",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "rating": {
+                                    "description": "Rate App",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "comment": {
+                                    "description": "Rate App",
+                                    "type": "string",
+                                    "default": "Lorem Ipsum"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Rate App",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Rate App",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Rate App",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Rate App",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/notification_delete": {
+            "post": {
+                "summary": "Notification Delete",
+                "description": "action = Notification Delete",
+                "operationId": "notification_delete",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Notification Delete",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Notification Delete",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "notification_id": {
+                                    "description": "Notification Delete",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Notification Delete",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Notification Delete",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Notification Delete",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Notification Delete",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/clear_all_notification": {
+            "post": {
+                "summary": "Clear All Notification",
+                "description": "action = Clear All Notification",
+                "operationId": "clear_all_notification",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Clear All Notification",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Clear All Notification",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Clear All Notification",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Clear All Notification",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Clear All Notification",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Clear All Notification",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/cart_list": {
+            "post": {
+                "summary": "Cart List",
+                "description": "action = Cart List",
+                "operationId": "cart_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Cart List",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Cart List",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Cart List",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Cart List",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Cart List",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Cart List",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/delete_cart": {
+            "post": {
+                "summary": "Delete Cart",
+                "description": "action = Delete Cart",
+                "operationId": "delete_cart",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Delete Cart",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Delete Cart",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "cart_id": {
+                                    "description": "Delete Cart",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Delete Cart",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Delete Cart",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Delete Cart",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Delete Cart",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/upload_receipt": {
+            "post": {
+                "summary": "Upload Receipt",
+                "description": "action = Upload Receipt",
+                "operationId": "upload_receipt",
+                "consumes": [
+                    "form-data"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Upload Receipt",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Upload Receipt",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Upload Receipt",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "receipt_image": {
+                                    "description": "Upload Receipt",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Upload Receipt",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Upload Receipt",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Upload Receipt",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Upload Receipt",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/receipt_list": {
+            "post": {
+                "summary": "Receipt List",
+                "description": "action = Receipt List",
+                "operationId": "receipt_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Receipt List",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Receipt List",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Receipt List",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Receipt List",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Receipt List",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Receipt List",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/help": {
+            "post": {
+                "summary": "Help",
+                "description": "action = Help",
+                "operationId": "help",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Help",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Help",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Help",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Help",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Help",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Help",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/user_management": {
+            "post": {
+                "summary": "User Management",
+                "description": "action = User Management",
+                "operationId": "user_management",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "User Management",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "User Management",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "User Management",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "User Management",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "User Management",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "User Management",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/faq": {
+            "post": {
+                "summary": "FAQ",
+                "description": "action = FAQ",
+                "operationId": "faq",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "FAQ",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "FAQ",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "FAQ",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "FAQ",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "FAQ",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "FAQ",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/select_size": {
+            "get": {
+                "summary": "Select Size.",
+                "description": "Select Size",
+                "responses": {
+                    "200": {
+                        "description": "Details fetched successfully"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/get_country": {
+            "get": {
+                "summary": "Get Countries.",
+                "description": "Get Countries",
+                "responses": {
+                    "200": {
+                        "description": "Details fetched successfully"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/get_state": {
+            "post": {
+                "summary": "States",
+                "description": "action = States",
+                "operationId": "get_state",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "States",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "country_id": {
+                                    "description": "States",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "States",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "States",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "States",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "States",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/get_city": {
+            "post": {
+                "summary": "Cities",
+                "description": "action = Cities",
+                "operationId": "get_city",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Cities",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "state_id": {
+                                    "description": "Cities",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Cities",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Cities",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Cities",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Cities",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/get_market": {
+            "post": {
+                "summary": "Get Market List For Dropdown",
+                "description": "action = Get Market List For Dropdown",
+                "operationId": "get_market",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Get Market List For Dropdown",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "state_id": {
+                                    "description": "Get Market List For Dropdown",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "city_id": {
+                                    "description": "Get Market List For Dropdown",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Get Market List For Dropdown",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Get Market List For Dropdown",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Get Market List For Dropdown",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Get Market List For Dropdown",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/campaign_list": {
+            "post": {
+                "summary": "Campaign",
+                "description": "action = Campaign",
+                "operationId": "campaign_list",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Campaign",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Campaign",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "category_id": {
+                                    "description": "Campaign",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Campaign",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Campaign",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Campaign",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Campaign",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/mall_details": {
+            "post": {
+                "summary": "Mall Details",
+                "description": "action = Mall Details",
+                "operationId": "mall_details",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Mall Details",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Mall Details",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "mall_id": {
+                                    "description": "Mall Details",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Mall Details",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Mall Details",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Mall Details",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Mall Details",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+        "/api/payment": {
+            "post": {
+                "summary": "Payment",
+                "description": "action = Payment",
+                "operationId": "payment",
+                "consumes": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain",
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Payment",
+                        "required": true,
+                        "schema": {
+                            "properties": {
+                                "user_id": {
+                                    "description": "Payment",
+                                    "type": "string",
+                                    "default": "78"
+                                },
+                                "product_id": {
+                                    "description": "Payment",
+                                    "type": "string",
+                                    "default": "78"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success response",
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "description": "Payment",
+                                    "type": "string",
+                                    "default": "Data fetched succesfully"
+                                },
+                                "status": {
+                                    "description": "Payment",
+                                    "type": "string",
+                                    "default": "1"
+                                },
+                                "result": {
+                                    "description": "Payment",
+                                    "type": "array",
+                                    "items": {
+                                        "properties": {
+                                            "data": {
+                                                "description": "Payment",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    "default": "1"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    },
+                    "401": {
+                        "description": "Invalid Data"
+                    }
+                }
+            }
+        },
+    
+    "/api/market_details": {
+        "post": {
+            "summary": "Market Details",
+            "description": "action = Market Details",
+            "operationId": "market_details",
+            "consumes": [
+                "text/plain",
+                "application/json"
+            ],
+            "produces": [
+                "text/plain",
+                "application/json"
+            ],
+            "parameters": [
+                {
+                    "name": "body",
+                    "in": "body",
+                    "description": "Market Detail",
+                    "required": true,
+                    "schema": {
+                        "properties": {
+                            "user_id": {
+                                "description": "Market Detail",
+                                "type": "string",
+                                "default": "78"
+                            },
+                            "market_id": {
+                                "description": "Market Detail",
+                                "type": "string",
+                                "default": "78"
+                            }
+                        }
+                    }
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "Success response",
+                    "schema": {
+                        "properties": {
+                            "message": {
+                                "description": "Market Detail",
+                                "type": "string",
+                                "default": "Data fetched succesfully"
+                            },
+                            "status": {
+                                "description": "Market Detail",
+                                "type": "string",
+                                "default": "1"
+                            },
+                            "result": {
+                                "description": "Market Detail",
+                                "type": "array",
+                                "items": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "Market Detail",
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "default": "1"
+                            }
+                        }
+                    }
+                },
+                "400": {
+                    "description": "Bad request"
+                },
+                "404": {
+                    "description": "Resource Not Found"
+                },
+                "401": {
+                    "description": "Invalid Data"
+                }
+            }
+        }
+    }
+},
+    "definitions": {}
+}

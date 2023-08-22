@@ -1,0 +1,257 @@
+<?php
+
+
+namespace App\Http\Controllers\Traits;
+
+use function GuzzleHttp\Psr7\str;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+
+trait SmsTrait
+{
+
+//    private function feedback_admin_messenger($message)
+//    {
+//        $url = config('mshastra.url');
+//        $user = config('mshastra.username');
+//        $pwd = config('mshastra.password');
+//        $sender_id = config('mshastra.sender_id');
+//        $mobileno = config('mshastra.admin_mob_1') . ',' . config('mshastra.admin_mob_2');
+//
+//        $api = $url . 'user=' . $user . '&pwd=' . $pwd . '&senderid=' . $sender_id . '&mobileno=' . $mobileno . '&msgtext=' . $message . '&priority=High&CountryCode=ALL';
+//        Log::error('message api request : ' . $api);
+//        $res = Http::get($api);
+//        Log::error('message api response : ' . $res);
+//
+//        return $res;
+//    }
+//
+//    private function feedback_user_messenger($reciepient_name, $reciepient_mobile_no, $message)
+//    {
+//        include(app_path() . "\Http\Controllers\Traits\messenger_etisalat\includeSettings.php");
+//
+//        $mobile = config('etisalat.url');
+//        $password = config('etisalat.url');
+//        $sender = config('etisalat.url');
+//        $timeSend = config('etisalat.url');
+//        $dateSend = config('etisalat.url');
+//        $resultType = config('etisalat.url');
+//        $MsgID = config('etisalat.url');
+//
+//        //Mesage Text, will be encoded to our APU UNICODE automatically
+//        //Messages in English: if the length of message is 160 characters or less, only one point will be deducted, if the length is more than 160 characters, then one point will be deducted for every 158 characters of the message.
+//        //Messages in Arabic (or English & Arabic): if the length of message is 70 characters or less, only one point will be deducted, if the length is more than 160 characters, then one point will be deducted for every 67 characters of the message.
+//        //Message must be in Windows-1256 character set before it's used here, and you can convert it to the required character set using ICONV function in PHP
+//        $apiResult = sendSMS($mobile, $password, $reciepient_mobile_no, $sender, 'Dear valued customer. ' . $message, $timeSend, $dateSend, $resultType, $MsgID);
+////        Log::error('message api response : ' . $res);
+//
+////        if ($res . '' == 'Enter text message.')
+////            $res = '';
+//
+//        $res = '';
+//        if ($apiResult{0} != '#')
+//            $res = "Failed to send SMS";
+//        else
+//            $res = $apiResult;
+//
+//        return $res;
+//    }
+
+    function naSmsAuth()
+    {
+
+        $dataFromTheForm = $_POST['fieldName']; // request data from the form
+        $soapUrl = "https://nawebservices.nationalambulance.ae/SMS-Using-Email/SMSUsingEmail.asmx"; // asmx URL of WSDL
+        $soapUser = "NAAdmin";  //  username
+        $soapPassword = "Pass@1234"; // password
+
+        // xml post structure
+        $xml_post_string = '<?xml version="1.0" encoding="utf-8"?>
+  <soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+    <soap12:Header>
+      <NASecureToken xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx">
+        <UserName>' . $soapUser . '</UserName>
+        <Password>' . $soapPassword . '</Password>
+        <AuthenticationToken></AuthenticationToken>
+      </NASecureToken>
+    </soap12:Header>
+    <soap12:Body>
+    <AuthenticateUser xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx" />
+  </soap12:Body>
+  </soap12:Envelope>';   // data from the form, e.g. some ID number
+
+        $headers = array(
+            "Content-type: application/soap+xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Cache-Control: no-cache",
+            "Pragma: no-cache",
+            "Content-length: " . strlen($xml_post_string),
+        ); //SOAPAction: your op URL
+
+        $url = $soapUrl;
+
+        // PHP cURL  for https connection with auth
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        //  curl_setopt($ch, CURLOPT_USERPWD, $soapUser.":".$soapPassword); // username and password - declared at the top of the doc
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $xml_post_string); // the SOAP request
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        // converting
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        // converting
+        $response1 = str_replace("<soap:Body>", "", $response);
+        $response2 = str_replace("</soap:Body>", "", $response1);
+
+        // convertingc to XML
+        $parser = simplexml_load_string($response2);
+        $token = $parser['AuthenticateUserResult'];
+        // user $parser to get your data out of XML response and to display it.
+        print_r($parser);
+        dd($parser);
+        return $token;
+    }
+
+    function feedback_messenger($reciepient_mobile_no, $message)
+    {
+        //Data, connection, auth
+        $dataFromTheForm = '/n' . $message; // request data from the form
+        $soapUrl = "https://nawebservices.nationalambulance.ae/SMS-Using-Email/SMSUsingEmail.asmx"; // asmx URL of WSDL
+        $soapUser = "NAAdmin";  //  username
+        $soapPassword = "Pass@1234"; // password
+        $token = naSmsAuth();   // getting auth token from national ambulance webserver
+
+        // xml post structure
+        $xml_post_string = '<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Header>
+    <NASecureToken xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx">
+      <UserName>' . $soapUser . '</UserName>
+      <Password>' . $soapPassword . '</Password>
+      <AuthenticationToken>' . $token . '</AuthenticationToken>
+    </NASecureToken>
+  </soap12:Header>
+  <soap12:Body>
+    <sendSMSUsingEmail xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx">
+      <pMobileNumber>' . $reciepient_mobile_no . '</pMobileNumber>
+      <pMessageBody>' . $message . '</pMessageBody>
+    </sendSMSUsingEmail>
+  </soap12:Body>
+</soap12:Envelope>';   // data from the form, e.g. some ID number
+
+        $headers = array(
+            "Content-type: application/soap+xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Cache-Control: no-cache",
+            "Pragma: no-cache",
+            "Content-length: " . strlen($xml_post_string),
+        ); //SOAPAction: your op URL
+
+        $url = $soapUrl;
+
+        // PHP cURL  for https connection with auth
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        //  curl_setopt($ch, CURLOPT_USERPWD, $soapUser.":".$soapPassword); // username and password - declared at the top of the doc
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $xml_post_string); // the SOAP request
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        // converting
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        // converting
+        $response1 = str_replace("<soap:Body>", "", $response);
+        $response2 = str_replace("</soap:Body>", "", $response1);
+
+        // convertingc to XML
+        $parser = simplexml_load_string($response2);
+        $result = $parser['sendSMSUsingEmailResult'];
+        dd($parser);
+        dd($result);
+        // user $parser to get your data out of XML response and to display it.
+        return $result;
+    }
+
+    function service_messenger($reciepient_mobile_no, $message)
+    {
+        //Data, connection, auth
+        $dataFromTheForm = '/n' . $message; // request data from the form
+        $soapUrl = "https://nawebservices.nationalambulance.ae/SMS-Using-Email/SMSUsingEmail.asmx"; // asmx URL of WSDL
+        $soapUser = "NAAdmin";  //  username
+        $soapPassword = "Pass@1234"; // password
+        $token = naSmsAuth();   // getting auth token from national ambulance webserver
+
+        // xml post structure
+        $xml_post_string = '<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+  <soap12:Header>
+    <NASecureToken xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx">
+      <UserName>' . $soapUser . '</UserName>
+      <Password>' . $soapPassword . '</Password>
+      <AuthenticationToken>' . $token . '</AuthenticationToken>
+    </NASecureToken>
+  </soap12:Header>
+  <soap12:Body>
+    <sendSMSUsingEmail xmlns="https://nawebservices.nationalambulance.ae/SMSUsingEmail.asmx">
+      <pMobileNumber>' . $reciepient_mobile_no . '</pMobileNumber>
+      <pMessageBody>' . $message . '</pMessageBody>
+    </sendSMSUsingEmail>
+  </soap12:Body>
+</soap12:Envelope>';   // data from the form, e.g. some ID number
+
+        $headers = array(
+            "Content-type: application/soap+xml;charset=\"utf-8\"",
+            "Accept: text/xml",
+            "Cache-Control: no-cache",
+            "Pragma: no-cache",
+            "Content-length: " . strlen($xml_post_string),
+        ); //SOAPAction: your op URL
+
+        $url = $soapUrl;
+
+        // PHP cURL  for https connection with auth
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        //  curl_setopt($ch, CURLOPT_USERPWD, $soapUser.":".$soapPassword); // username and password - declared at the top of the doc
+        curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $xml_post_string); // the SOAP request
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+        // converting
+        $response = curl_exec($ch);
+        curl_close($ch);
+
+        // converting
+        $response1 = str_replace("<soap:Body>", "", $response);
+        $response2 = str_replace("</soap:Body>", "", $response1);
+
+        // convertingc to XML
+        $parser = simplexml_load_string($response2);
+        $result = $parser['sendSMSUsingEmailResult'];
+        dd($parser);
+        dd($result);
+        // user $parser to get your data out of XML response and to display it.
+        return $result;
+    }
+
+
+
+}
